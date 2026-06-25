@@ -25,7 +25,7 @@ export function ContatoPageContent() {
     e.preventDefault();
     const msg = `Olá! Me chamo ${form.name}.\n\nAssunto: ${form.subject}\n\n${form.message}\n\nMeu email: ${form.email}\nMeu telefone: ${form.phone}`;
     window.open(
-      `https://wa.me/5583986469009?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
     setSubmitted(true);
@@ -53,7 +53,7 @@ export function ContatoPageContent() {
           <div className="space-y-6">
             <AnimateIn>
               <a
-                href="https://wa.me/5583986469009"
+                href="https://wa.me/17169399340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-light rounded-2xl p-6 flex items-start gap-4 hover:border-green-400/20 transition-all duration-300 cursor-pointer block"
@@ -83,7 +83,7 @@ export function ContatoPageContent() {
                     Telefone
                   </h3>
                   <a
-                    href="tel:+5583986469009"
+                    href="tel:+17169399340"
                     className="text-muted text-sm hover:text-light transition-colors"
                   >
                     (83) 98646-9009
@@ -113,7 +113,7 @@ export function ContatoPageContent() {
 
             <AnimateIn delay={0.3}>
               <a
-                href="https://instagram.com/oseuplanobr"
+                href="https://instagram.com/seuplano.ofc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-light rounded-2xl p-6 flex items-start gap-4 hover:border-gold/20 transition-all duration-300 cursor-pointer block"
@@ -125,7 +125,7 @@ export function ContatoPageContent() {
                   <h3 className="font-heading font-semibold text-light mb-1">
                     Instagram
                   </h3>
-                  <p className="text-muted text-sm">@oseuplanobr</p>
+                  <p className="text-muted text-sm">@seuplano.ofc</p>
                   <p className="text-pink-400 text-xs mt-1">18.6k seguidores</p>
                 </div>
               </a>

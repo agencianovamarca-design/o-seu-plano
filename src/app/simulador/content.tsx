@@ -372,7 +372,7 @@ export function SimuladorPageContent() {
                         if (name && phone) {
                           const msg = `Olá! Sou ${name}. Simulei um consórcio de ${fmt(creditValue)} para ${cat.label} (${months} meses, taxa ${(cat.adminRate * 100).toFixed(1)}%). Parcela estimada: ${fmt(consortiumMonthly)}/mês. Gostaria de uma proposta personalizada.`;
                           window.open(
-                            `https://wa.me/5583986469009?text=${encodeURIComponent(msg)}`,
+                            `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
                             "_blank"
                           );
                           setSubmitted(true);

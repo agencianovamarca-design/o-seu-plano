@@ -15,7 +15,7 @@ export function LeadCaptureSection() {
 
     const msg = `Olá! Sou ${name}, acabei de baixar o e-book pelo site. Meu WhatsApp: ${whatsapp}. Gostaria de saber mais sobre consórcio.`;
     window.open(
-      `https://wa.me/5583986469009?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
 

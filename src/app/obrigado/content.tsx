@@ -44,7 +44,7 @@ export function ObrigadoContent() {
                 <ArrowRight size={14} />
               </Link>
               <a
-                href="https://wa.me/5583986469009?text=Ol%C3%A1!%20Baixei%20o%20e-book%20e%20gostaria%20de%20saber%20mais."
+                href="https://wa.me/17169399340?text=Ol%C3%A1!%20Baixei%20o%20e-book%20e%20gostaria%20de%20saber%20mais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 p-4 rounded-xl bg-[#25D366]/10 border border-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/20 transition-all text-sm font-medium"
@@ -62,12 +62,12 @@ export function ObrigadoContent() {
           <p className="text-white/15 text-xs">
             Siga-nos no{" "}
             <a
-              href="https://instagram.com/oseuplanobr"
+              href="https://instagram.com/seuplano.ofc"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/25 hover:text-gold transition-colors"
             >
-              Instagram @oseuplanobr
+              Instagram @seuplano.ofc
             </a>{" "}
             para mais conteúdo educativo.
           </p>

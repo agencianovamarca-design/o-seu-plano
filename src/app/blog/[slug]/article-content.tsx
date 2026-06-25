@@ -104,7 +104,7 @@ export function ArticleContent({
                 Simular agora
               </Link>
               <a
-                href="https://wa.me/5583986469009"
+                href="https://wa.me/17169399340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-white/[0.12] px-7 py-3 rounded-full text-sm font-medium text-white/50 hover:text-white hover:border-white/30 transition-all uppercase tracking-wider"

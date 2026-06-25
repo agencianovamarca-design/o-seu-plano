@@ -32,7 +32,7 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com/oseuplanobr"
+                href="https://instagram.com/seuplano.ofc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/[0.06] flex items-center justify-center text-white/30 hover:text-gold hover:border-gold/20 transition-all duration-300 cursor-pointer"
@@ -96,7 +96,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://wa.me/5583986469009"
+                  href="https://wa.me/17169399340"
                   className="flex items-center gap-3 text-white/25 text-sm hover:text-white/60 transition-colors duration-200"
                 >
                   <Phone size={14} className="text-electric shrink-0" />
@@ -122,7 +122,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} O Seu Plano. Todos os direitos reservados.
           </p>
           <a
-            href="https://wa.me/5583986469009"
+            href="https://wa.me/17169399340"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full text-xs font-semibold hover:bg-[#20BD5A] transition-colors duration-200 cursor-pointer"

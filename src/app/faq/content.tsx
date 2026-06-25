@@ -64,7 +64,7 @@ const faqCategories = [
       },
       {
         q: "Como posso falar com vocês?",
-        a: "Pelo WhatsApp (83) 98646-9009, pelo formulário de contato no site ou pelas redes sociais @oseuplanobr. Estamos sempre disponíveis para tirar dúvidas — sem compromisso.",
+        a: "Pelo WhatsApp (83) 98646-9009, pelo formulário de contato no site ou pelas redes sociais @seuplano.ofc. Estamos sempre disponíveis para tirar dúvidas — sem compromisso.",
       },
     ],
   },
@@ -156,7 +156,7 @@ export function FAQPageContent() {
         <AnimateIn delay={0.4} className="mt-12 text-center">
           <p className="text-muted mb-4">Não encontrou sua pergunta?</p>
           <a
-            href="https://wa.me/5583986469009"
+            href="https://wa.me/17169399340"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity duration-200 cursor-pointer"

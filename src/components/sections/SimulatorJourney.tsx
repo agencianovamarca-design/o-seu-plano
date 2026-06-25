@@ -139,7 +139,7 @@ export function SimulatorJourneySection() {
     const profileLabel = profile?.label ?? "consórcio";
     const msg = `Olá! Sou ${name || "visitante do site"}.\n\nFiz a simulação no site:\n• Objetivo: ${profileLabel}\n• Crédito: ${fmt(creditValue)}\n• Prazo: ${months} meses\n• Parcela consórcio: ${fmt(consortiumMonthly)}/mês\n• Economia vs financiamento: ${fmt(savings)}\n\nGostaria de uma análise personalizada.`;
     window.open(
-      `https://wa.me/5583986469009?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
     setSent(true);

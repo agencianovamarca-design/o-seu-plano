@@ -220,7 +220,7 @@ export function HowItWorksPageContent() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5583986469009"
+                href="https://wa.me/17169399340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-gold text-deep px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity duration-200 cursor-pointer"
