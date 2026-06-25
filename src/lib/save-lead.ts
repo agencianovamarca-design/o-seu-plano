@@ -1,4 +1,4 @@
-const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/COLE_SEU_ID_AQUI/exec";
+const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwSWDV-rRQX3zoPTciJ86PmWBDezm3PQYbpjJmo8V2N8ULMH3NA3QsT4ECDbSfHGDA9/exec";
 
 export async function saveLead(data: {
   nome: string;
