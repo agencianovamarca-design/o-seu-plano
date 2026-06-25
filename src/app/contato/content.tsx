@@ -10,6 +10,7 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+import { saveLead } from "@/lib/save-lead";
 
 export function ContatoPageContent() {
   const [form, setForm] = useState({
@@ -23,6 +24,14 @@ export function ContatoPageContent() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    saveLead({
+      nome: form.name,
+      whatsapp: form.phone,
+      email: form.email,
+      origem: "Formulário de contato",
+      assunto: form.subject,
+      mensagem: form.message,
+    });
     const msg = `Olá! Me chamo ${form.name}.\n\nAssunto: ${form.subject}\n\n${form.message}\n\nMeu email: ${form.email}\nMeu telefone: ${form.phone}`;
     window.open(
       `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { saveLead } from "@/lib/save-lead";
 import {
   Home,
   Car,
@@ -137,6 +138,13 @@ export function SimulatorJourneySection() {
 
   const sendWhatsApp = () => {
     const profileLabel = profile?.label ?? "consórcio";
+    saveLead({
+      nome: name || "visitante",
+      whatsapp: "",
+      origem: "Simulador SICAD",
+      assunto: profileLabel,
+      mensagem: `Crédito: ${fmt(creditValue)} | Prazo: ${months}m | Parcela: ${fmt(consortiumMonthly)}/mês | Economia: ${fmt(savings)}`,
+    });
     const msg = `Olá! Sou ${name || "visitante do site"}.\n\nFiz a simulação no site:\n• Objetivo: ${profileLabel}\n• Crédito: ${fmt(creditValue)}\n• Prazo: ${months} meses\n• Parcela consórcio: ${fmt(consortiumMonthly)}/mês\n• Economia vs financiamento: ${fmt(savings)}\n\nGostaria de uma análise personalizada.`;
     window.open(
       `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimateIn } from "@/components/AnimateIn";
 import { BookOpen, ArrowRight, CheckCircle, Shield } from "lucide-react";
+import { saveLead } from "@/lib/save-lead";
 
 export function LeadCaptureSection() {
   const [name, setName] = useState("");
@@ -12,6 +13,8 @@ export function LeadCaptureSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !whatsapp) return;
+
+    saveLead({ nome: name, whatsapp, origem: "E-book" });
 
     const link = document.createElement("a");
     link.href = "/downloads/ebook-o-seu-plano.pdf";
