@@ -64,7 +64,7 @@ const faqCategories = [
       },
       {
         q: "Como posso falar com vocês?",
-        a: "Pelo WhatsApp (83) 98646-9009, pelo formulário de contato no site ou pelas redes sociais @seuplano.ofc. Estamos sempre disponíveis para tirar dúvidas — sem compromisso.",
+        a: "Pelo WhatsApp +1 (716) 939-9340, pelo formulário de contato no site ou pelas redes sociais @seuplano.ofc. Estamos sempre disponíveis para tirar dúvidas — sem compromisso.",
       },
     ],
   },

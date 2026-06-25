@@ -100,7 +100,7 @@ export function Footer() {
                   className="flex items-center gap-3 text-white/25 text-sm hover:text-white/60 transition-colors duration-200"
                 >
                   <Phone size={14} className="text-electric shrink-0" />
-                  (83) 98646-9009
+                  +1 (716) 939-9340
                 </a>
               </li>
               <li>

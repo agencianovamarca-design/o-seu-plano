@@ -65,7 +65,7 @@ export function ContatoPageContent() {
                   <h3 className="font-heading font-semibold text-light mb-1">
                     WhatsApp
                   </h3>
-                  <p className="text-muted text-sm">(83) 98646-9009</p>
+                  <p className="text-muted text-sm">+1 (716) 939-9340</p>
                   <p className="text-green-400 text-xs mt-1">
                     Resposta rápida
                   </p>
@@ -86,7 +86,7 @@ export function ContatoPageContent() {
                     href="tel:+17169399340"
                     className="text-muted text-sm hover:text-light transition-colors"
                   >
-                    (83) 98646-9009
+                    +1 (716) 939-9340
                   </a>
                 </div>
               </div>
