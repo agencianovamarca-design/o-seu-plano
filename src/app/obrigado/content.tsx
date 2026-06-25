@@ -1,10 +1,20 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { AnimateIn } from "@/components/AnimateIn";
 import { Download, ArrowRight, CheckCircle } from "lucide-react";
 
 export function ObrigadoContent() {
+  useEffect(() => {
+    const link = document.createElement("a");
+    link.href = "/downloads/ebook-o-seu-plano.pdf";
+    link.download = "O-Seu-Plano-Ebook.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, []);
+
   return (
     <div className="pt-32 pb-24">
       <section className="max-w-2xl mx-auto px-6 text-center">

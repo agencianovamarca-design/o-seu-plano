@@ -13,13 +13,20 @@ export function LeadCaptureSection() {
     e.preventDefault();
     if (!name || !whatsapp) return;
 
-    const msg = `Olá! Sou ${name}, acabei de baixar o e-book pelo site. Meu WhatsApp: ${whatsapp}. Gostaria de saber mais sobre consórcio.`;
+    const link = document.createElement("a");
+    link.href = "/downloads/ebook-o-seu-plano.pdf";
+    link.download = "O-Seu-Plano-Ebook.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    const msg = `Novo lead do e-book:\n• Nome: ${name}\n• WhatsApp: ${whatsapp}`;
     window.open(
       `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
 
-    window.location.href = "/obrigado";
+    setSent(true);
   };
 
   return (
@@ -80,7 +87,7 @@ export function LeadCaptureSection() {
                       Receba o e-book agora
                     </h3>
                     <p className="text-white/25 text-sm mb-6">
-                      Preencha e receba o link de download no WhatsApp.
+                      Preencha e o download começa automaticamente.
                     </p>
                     <div>
                       <label
@@ -130,9 +137,20 @@ export function LeadCaptureSection() {
                       size={40}
                       className="text-green-400 mx-auto mb-4"
                     />
-                    <p className="font-heading font-bold text-white text-lg">
-                      Redirecionando...
+                    <p className="font-heading font-bold text-white text-lg mb-2">
+                      Download iniciado!
                     </p>
+                    <p className="text-white/30 text-sm mb-6">
+                      Se não iniciou automaticamente, clique abaixo:
+                    </p>
+                    <a
+                      href="/downloads/ebook-o-seu-plano.pdf"
+                      download="O-Seu-Plano-Ebook.pdf"
+                      className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-6 py-3 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer"
+                    >
+                      <ArrowRight size={14} />
+                      Baixar e-book
+                    </a>
                   </div>
                 )}
               </AnimateIn>
