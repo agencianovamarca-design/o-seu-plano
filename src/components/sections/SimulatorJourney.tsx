@@ -63,18 +63,18 @@ const categories: Record<
 > = {
   imovel: {
     maxCredit: 1000000,
-    minCredit: 50000,
+    minCredit: 80000,
     maxMonths: 216,
     adminRate: 0.285,
-    financeRate: 0.0095,
+    financeRate: 0.0136,
     financeMonthsFactor: 1.67,
   },
   veiculo: {
-    maxCredit: 750000,
+    maxCredit: 170000,
     minCredit: 30000,
     maxMonths: 96,
     adminRate: 0.195,
-    financeRate: 0.0145,
+    financeRate: 0.0136,
     financeMonthsFactor: 1,
   },
 };
@@ -355,10 +355,15 @@ export function SimulatorJourneySection() {
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-3">
                   Sabe quanto você pagaria no financiamento?
                 </h3>
-                <p className="text-white/30 text-sm mb-10 max-w-lg">
-                  Pelos mesmos {fmt(creditValue)}, com juros compostos de{" "}
-                  {(cat.financeRate * 100).toFixed(2)}% a.m., veja o que
-                  acontece:
+                <p className="text-white/30 text-sm mb-4 max-w-lg">
+                  Pelos mesmos {fmt(creditValue)}, o banco cobra taxa de{" "}
+                  <span className="text-red-400 font-bold">1,36% a.m.</span> (17,57% a.a.)
+                  com CET real de{" "}
+                  <span className="text-red-400 font-bold">22,46% a.a.</span>{" "}
+                  — fora as tarifas de avaliação (R$ 668) e cadastro (R$ 999).
+                </p>
+                <p className="text-white/20 text-xs mb-8 max-w-lg">
+                  Valores reais praticados pelo mercado financeiro brasileiro.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
