@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Logo } from "./Logo";
+import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 
 const navLinks = [
@@ -25,7 +25,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Logo className="h-10 w-auto mb-6" />
+            <Image
+              src="/images/logo-horizontal.png"
+              alt="O Seu Plano"
+              width={200}
+              height={50}
+              className="h-10 w-auto mb-6"
+            />
             <p className="text-white/25 text-sm leading-relaxed mb-8">
               Educando consumidores e transformando o mercado de consórcios.
               Informação é poder.

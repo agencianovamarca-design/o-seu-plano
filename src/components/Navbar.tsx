@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { Logo } from "./Logo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -34,7 +34,14 @@ export function Navbar() {
         }`}
       >
         <Link href="/" aria-label="Página inicial">
-          <Logo className="h-9 w-auto" />
+          <Image
+            src="/images/logo-horizontal.png"
+            alt="O Seu Plano"
+            width={180}
+            height={45}
+            className="h-9 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop */}
