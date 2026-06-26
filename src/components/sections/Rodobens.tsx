@@ -14,9 +14,9 @@ const differentials = [
   },
   {
     icon: Users,
-    title: "Grupos de até 650 pessoas",
+    title: "Grupos menores, mais chances",
     description:
-      "Para imóveis, o máximo são 650 participantes. Outras administradoras colocam 5 mil, 10 mil ou mais pessoas competindo pelas mesmas cotas.",
+      "Para imóveis, grupos de até 999 participantes (Faixa I). Para veículos, até 2.000 na Edição Especial. Outras administradoras colocam 5 mil, 10 mil ou mais pessoas competindo.",
   },
   {
     icon: Shield,
@@ -117,8 +117,8 @@ export function RodobensSection() {
             {[
               { value: 77, suffix: " anos", label: "De mercado" },
               { value: 59, suffix: " anos", label: "Em consórcios" },
-              { value: 5500, suffix: "+", label: "Colaboradores" },
-              { value: 650, suffix: "", label: "Máx. por grupo (imóveis)" },
+              { value: 999, suffix: "", label: "Máx. grupo imóveis (Fx I)" },
+              { value: 2000, suffix: "", label: "Máx. grupo autos (Ed. Esp.)" },
             ].map((stat) => (
               <div key={stat.label} className="bg-surface p-8 text-center">
                 <div className="text-2xl lg:text-3xl font-bold text-gradient-gold font-heading">

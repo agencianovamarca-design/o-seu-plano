@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         q: "Qual o tamanho dos grupos?",
-        a: "Nossa administradora trabalha com grupos de 120, 240, 360, 650 e no máximo 2.000 participantes. Mesmo nos maiores grupos, as chances de sorteio são reais — muito diferente de outras administradoras que operam com 5.000 a 10.000+ participantes.",
+        a: "Nossa administradora trabalha com grupos de de 999 (imóveis Faixa I) a 2.000 (autos Edição Especial) participantes. Mesmo nos maiores grupos, as chances de sorteio são reais — muito diferente de outras administradoras que operam com 5.000 a 10.000+ participantes.",
       },
       {
         q: "Preciso dar lance para ser contemplado?",

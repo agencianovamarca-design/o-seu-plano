@@ -62,10 +62,12 @@ const categories: Record<
   }
 > = {
   imovel: {
-    maxCredit: 1000000,
+    maxCredit: 360000,
     minCredit: 80000,
     maxMonths: 216,
     adminRate: 0.285,
+    groupSize: 999,
+    correction: "INCC",
     financeRate: 0.0136,
     financeMonthsFactor: 1.67,
   },
@@ -74,6 +76,8 @@ const categories: Record<
     minCredit: 30000,
     maxMonths: 96,
     adminRate: 0.195,
+    groupSize: 2000,
+    correction: "IPCA",
     financeRate: 0.0136,
     financeMonthsFactor: 1,
   },

@@ -39,7 +39,7 @@ export const articles: Record<string, Section[]> = {
     },
     {
       heading: "Por que o tamanho do grupo importa tanto",
-      body: "Imagine dois cenários. No cenário A, você está em um grupo com 8.000 participantes. Todo mês, apenas 2-3 cotas são contempladas por sorteio. Sua chance mensal? Menos de 0,04%.\n\nNo cenário B, você está em um grupo com 650 participantes. A cada assembleia, as contemplações por sorteio representam uma fatia muito maior do grupo. Sua chance mensal pode ser 10 a 15 vezes maior.\n\nEssa diferença não é marginal — ela define se o consórcio vai funcionar para você ou se vai virar frustração.",
+      body: "Imagine dois cenários. No cenário A, você está em um grupo com 8.000 participantes. Todo mês, apenas 2-3 cotas são contempladas por sorteio. Sua chance mensal? Menos de 0,04%.\n\nNo cenário B, você está em um grupo com 999 participantes. A cada assembleia, as contemplações por sorteio representam uma fatia muito maior do grupo. Sua chance mensal pode ser 10 a 15 vezes maior.\n\nEssa diferença não é marginal — ela define se o consórcio vai funcionar para você ou se vai virar frustração.",
     },
     {
       heading: "Como funciona a assembleia",
@@ -51,7 +51,7 @@ export const articles: Record<string, Section[]> = {
     },
     {
       heading: "Nossa escolha",
-      body: "Por isso trabalhamos com uma administradora que pratica sorteio manual, com grupos de no máximo 650 participantes para imóveis e 2.000 para veículos. São mais de 59 anos de história em consórcios, fiscalizada pelo Banco Central e associada à ABAC.\n\nNão escolhemos por comissão. Escolhemos por critério técnico e alinhamento com o que acreditamos: o consórcio deve funcionar para o cliente, não só para a administradora.",
+      body: "Por isso trabalhamos com uma administradora que pratica sorteio manual, com grupos de no máximo 999 participantes para imóveis (Faixa I) e até 2.000 para veículos. São mais de 59 anos de história em consórcios, fiscalizada pelo Banco Central e associada à ABAC.\n\nNão escolhemos por comissão. Escolhemos por critério técnico e alinhamento com o que acreditamos: o consórcio deve funcionar para o cliente, não só para a administradora.",
     },
   ],
 
@@ -163,7 +163,7 @@ export const articles: Record<string, Section[]> = {
     },
     {
       heading: "Critério 3: Taxa administrativa",
-      body: "A taxa administrativa é o custo do consórcio. Ela varia bastante:\n\nImóveis: de 18% a 35% no total\nVeículos: de 12% a 22% no total\n\nAtenção: taxa menor nem sempre é melhor. Uma taxa de 18% em um grupo com 10.000 pessoas pode ser pior que uma taxa de 28% em um grupo com 650, porque suas chances de contemplação são incomparavelmente maiores no grupo menor.\n\nAvalie o custo-benefício: taxa + tamanho do grupo + tipo de sorteio.",
+      body: "A taxa administrativa é o custo do consórcio. Ela varia bastante:\n\nImóveis: de 18% a 35% no total\nVeículos: de 12% a 22% no total\n\nAtenção: taxa menor nem sempre é melhor. Uma taxa de 18% em um grupo com 10.000 pessoas pode ser pior que uma taxa de 28% em um grupo com 999, porque suas chances de contemplação são incomparavelmente maiores no grupo menor.\n\nAvalie o custo-benefício: taxa + tamanho do grupo + tipo de sorteio.",
     },
     {
       heading: "Critério 4: Histórico e solidez",

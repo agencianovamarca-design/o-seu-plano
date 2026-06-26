@@ -13,7 +13,7 @@ const faqs = [
   {
     question: "Quanto tempo leva para ser contemplado?",
     answer:
-      "Depende. Você pode ser contemplado no primeiro mês por sorteio ou oferecer um lance para antecipar. Com sorteio manual e grupos menores (até 650 para imóveis), as chances reais de contemplação são muito maiores do que em administradoras que usam loteria federal com milhares de participantes.",
+      "Depende. Você pode ser contemplado no primeiro mês por sorteio ou oferecer um lance para antecipar. Com sorteio manual e grupos menores (até 999 para imóveis (Faixa I)), as chances reais de contemplação são muito maiores do que em administradoras que usam loteria federal com milhares de participantes.",
   },
   {
     question: "Qual a diferença entre consórcio e financiamento?",
