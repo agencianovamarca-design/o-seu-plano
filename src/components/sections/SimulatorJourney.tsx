@@ -57,6 +57,8 @@ const categories: Record<
     minCredit: number;
     maxMonths: number;
     adminRate: number;
+    groupSize: number;
+    correction: string;
     financeRate: number;
     financeMonthsFactor: number;
   }
