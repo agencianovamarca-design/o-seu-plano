@@ -26,7 +26,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/logo-horizontal.png"
+              src="/images/logo-nav.png"
               alt="O Seu Plano"
               width={200}
               height={50}

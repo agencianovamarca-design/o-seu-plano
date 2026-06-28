@@ -35,7 +35,7 @@ export function Navbar() {
       >
         <Link href="/" aria-label="Página inicial">
           <Image
-            src="/images/logo-horizontal.png"
+            src="/images/logo-nav.png"
             alt="O Seu Plano"
             width={180}
             height={45}
