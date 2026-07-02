@@ -28,7 +28,7 @@ export function Footer() {
             <Image
               src="/images/logo-nav.png"
               alt="O Seu Plano"
-              width={200}
+              width={310}
               height={50}
               className="h-10 w-auto mb-6"
             />

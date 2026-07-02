@@ -37,7 +37,7 @@ export function Navbar() {
           <Image
             src="/images/logo-nav.png"
             alt="O Seu Plano"
-            width={180}
+            width={280}
             height={45}
             className="h-9 w-auto"
             priority
