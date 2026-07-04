@@ -4,7 +4,7 @@ import { Phone, Mail } from "lucide-react";
 
 const navLinks = [
   { href: "/como-funciona", label: "Como Funciona" },
-  { href: "/sobre", label: "Sobre Nós" },
+  { href: "/produtos", label: "Produtos" },
   { href: "/simulador", label: "Simulador" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
