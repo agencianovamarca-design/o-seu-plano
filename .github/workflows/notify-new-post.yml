@@ -1,0 +1,43 @@
+name: Notificar novo post do blog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/app/blog/posts.ts"
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Rodar verificação e disparo de campanha
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_NAME: ${{ vars.BREVO_SENDER_NAME }}
+          BREVO_SENDER_EMAIL: ${{ vars.BREVO_SENDER_EMAIL }}
+          SITE_URL: https://oseuplano.com
+        run: node scripts/notify-new-post.mjs
+
+      - name: Salvar estado (se mudou)
+        run: |
+          if ! git diff --quiet -- data/newsletter-state.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/newsletter-state.json
+            git commit -m "chore: marca ultimo post notificado [skip ci]"
+            git push
+          else
+            echo "Nada para commitar."
+          fi

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { ArrowLeft, Clock, Share2 } from "lucide-react";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 type Section = { heading: string; body: string };
 type Post = {
@@ -130,6 +131,13 @@ export function ArticleContent({
                 Falar com especialista
               </a>
             </div>
+          </div>
+        </AnimateIn>
+
+        {/* Newsletter */}
+        <AnimateIn>
+          <div className="mt-8 p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
+            <NewsletterSignup />
           </div>
         </AnimateIn>
 

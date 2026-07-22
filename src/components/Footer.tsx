@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 const navLinks = [
   { href: "/como-funciona", label: "Como Funciona" },
@@ -21,7 +22,12 @@ const educationLinks = [
 export function Footer() {
   return (
     <footer className="border-t border-white/[0.04]">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-16">
+        <div className="rounded-2xl border border-gold/[0.12] bg-gold/[0.03] p-8 lg:p-10 mb-16">
+          <NewsletterSignup />
+        </div>
+      </div>
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
