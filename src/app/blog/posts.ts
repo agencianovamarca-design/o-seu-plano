@@ -1,5 +1,14 @@
 export const posts = [
   {
+    slug: "consorcio-que-funciona-3-sinais-de-alerta",
+    category: "Alerta",
+    title: "Consórcio que funciona: os 3 sinais que separam o real do golpe disfarçado",
+    excerpt:
+      "A maioria das reclamações sobre consórcio não vêm do produto — vêm de como ele é vendido. Fluxo de caixa do grupo, tipo de sorteio e histórico da administradora: o que investigar antes de assinar qualquer contrato.",
+    readTime: "12 min",
+    date: "2026-07-22",
+  },
+  {
     slug: "consorcio-vs-financiamento",
     category: "Educação",
     title: "Consórcio vs Financiamento: a conta que ninguém te mostrou",

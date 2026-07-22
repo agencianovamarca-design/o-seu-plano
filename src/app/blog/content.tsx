@@ -6,6 +6,7 @@ import { Clock, ArrowRight, BookOpen } from "lucide-react";
 import { posts } from "./posts";
 
 const categoryColors: Record<string, string> = {
+  Alerta: "text-red-400 bg-red-400/10",
   Educação: "text-electric bg-electric/10",
   Administradora: "text-gold bg-gold/10",
   Investimento: "text-green-400 bg-green-400/10",
