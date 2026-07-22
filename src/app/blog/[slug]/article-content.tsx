@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { ArrowLeft, Clock, Share2 } from "lucide-react";
 
@@ -12,6 +13,8 @@ type Post = {
   excerpt: string;
   readTime: string;
   date: string;
+  image: string;
+  imageAlt: string;
 };
 
 export function ArticleContent({
@@ -42,6 +45,21 @@ export function ArticleContent({
             <ArrowLeft size={14} />
             Voltar ao Blog
           </Link>
+        </AnimateIn>
+
+        {/* Cover */}
+        <AnimateIn>
+          <div className="relative h-56 sm:h-72 lg:h-80 rounded-2xl overflow-hidden mb-10">
+            <Image
+              src={post.image}
+              alt={post.imageAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep via-deep/10 to-transparent" />
+          </div>
         </AnimateIn>
 
         {/* Header */}

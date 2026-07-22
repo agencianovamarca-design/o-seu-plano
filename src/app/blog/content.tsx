@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
-import { Clock, ArrowRight, BookOpen } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { posts } from "./posts";
 
 const categoryColors: Record<string, string> = {
@@ -37,8 +38,15 @@ export function BlogPageContent() {
             <AnimateIn key={post.slug} delay={i * 0.1}>
               <Link href={`/blog/${post.slug}`} className="block h-full">
                 <article className="glass-light rounded-2xl overflow-hidden h-full flex flex-col group hover:border-gold/20 transition-all duration-300">
-                  <div className="h-48 bg-gradient-to-br from-dark to-surface flex items-center justify-center">
-                    <BookOpen size={40} className="text-gold/20" />
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-3 mb-3">
