@@ -29,8 +29,8 @@ export const posts = [
       "Por que o sorteio manual dá chances reais de contemplação e como outras administradoras usam a loteria federal contra você.",
     readTime: "6 min",
     date: "2026-06-15",
-    image: "https://images.unsplash.com/photo-1757689216934-8c7907b44a28",
-    imageAlt: "Bolas coloridas de sorteio girando em um globo",
+    image: "/images/blog/sorteio-manual-globo-rodobens.jpg",
+    imageAlt: "Sorteio manual real da Rodobens: bolinha numerada sendo retirada do globo característico em assembleia",
   },
   {
     slug: "investir-com-consorcio-airbnb",
