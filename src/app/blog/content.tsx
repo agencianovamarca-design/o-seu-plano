@@ -16,7 +16,7 @@ const categoryColors: Record<string, string> = {
 
 export function BlogPageContent() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       <section className="max-w-5xl mx-auto px-6">
         <AnimateIn className="text-center mb-16">
           <span className="inline-block text-xs font-semibold text-gold uppercase tracking-widest mb-4">

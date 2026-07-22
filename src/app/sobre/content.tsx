@@ -7,7 +7,7 @@ import { BookOpen, Eye, Shield, Target, Heart, Users } from "lucide-react";
 
 export function AboutPageContent() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       {/* Hero with Avatar */}
       <section className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

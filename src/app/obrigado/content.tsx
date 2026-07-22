@@ -16,7 +16,7 @@ export function ObrigadoContent() {
   }, []);
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       <section className="max-w-2xl mx-auto px-6 text-center">
         <AnimateIn>
           <CheckCircle size={56} className="text-green-400 mx-auto mb-6" />

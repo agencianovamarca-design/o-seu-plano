@@ -85,7 +85,7 @@ export function SimuladorPageContent() {
   const airbnbCoversInstallment = airbnbMonthly >= consortiumMonthly;
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       <section className="max-w-[1100px] mx-auto px-6 lg:px-12">
         <AnimateIn className="mb-12">
           <p className="text-[11px] font-semibold text-electric uppercase tracking-[0.25em] mb-6">

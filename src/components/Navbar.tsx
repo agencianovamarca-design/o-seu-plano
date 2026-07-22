@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { NewsTicker } from "@/components/NewsTicker";
 
 const links = [
   { href: "/", label: "Home" },
@@ -26,6 +27,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
+      <NewsTicker />
       <nav
         className={`mx-auto transition-all duration-500 flex items-center justify-between ${
           scrolled

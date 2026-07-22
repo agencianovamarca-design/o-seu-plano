@@ -114,7 +114,7 @@ const myths = [
 
 export function HowItWorksPageContent() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 text-center mb-20">
         <AnimateIn>

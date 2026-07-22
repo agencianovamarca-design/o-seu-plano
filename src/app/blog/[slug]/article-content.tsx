@@ -31,7 +31,7 @@ export function ArticleContent({
   );
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       <article className="max-w-3xl mx-auto px-6">
         {/* Back */}
         <AnimateIn>

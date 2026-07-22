@@ -76,7 +76,7 @@ const products = [
 
 export function ProdutosContent() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-36 pb-24">
       {/* Header */}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-20">
         <AnimateIn>
