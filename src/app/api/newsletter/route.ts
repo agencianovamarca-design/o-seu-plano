@@ -35,8 +35,12 @@ export async function POST(req: NextRequest) {
 
   const brevoApiKey = process.env.BREVO_API_KEY;
   const brevoListId = process.env.BREVO_LIST_ID;
+  const debug = req.nextUrl.searchParams.get("debug") === "1";
+  let debugInfo: Record<string, unknown> | null = null;
 
-  if (brevoApiKey && brevoListId) {
+  if (!brevoApiKey || !brevoListId) {
+    if (debug) debugInfo = { configured: false, hasKey: !!brevoApiKey, hasListId: !!brevoListId };
+  } else {
     try {
       const brevoRes = await fetch("https://api.brevo.com/v3/contacts", {
         method: "POST",
@@ -55,12 +59,16 @@ export async function POST(req: NextRequest) {
       if (!brevoRes.ok && brevoRes.status !== 400) {
         const detail = await brevoRes.text();
         console.error("Brevo contact error:", brevoRes.status, detail);
+        if (debug) debugInfo = { configured: true, status: brevoRes.status, detail };
+      } else if (debug) {
+        debugInfo = { configured: true, status: brevoRes.status, detail: await brevoRes.text() };
       }
     } catch (err) {
       console.error("Brevo request failed:", err);
+      if (debug) debugInfo = { configured: true, error: String(err) };
     }
   }
 
   await sheetPromise;
-  return NextResponse.json({ ok: true });
+  return NextResponse.json(debugInfo ? { ok: true, debug: debugInfo } : { ok: true });
 }
