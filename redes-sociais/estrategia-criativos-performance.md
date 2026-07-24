@@ -227,7 +227,57 @@ TEXTO NA TELA: "R$ 700 MIL DE DIFERENÇA · faça a conta"
 
 ---
 
-## 5. Checklist antes de publicar qualquer criativo novo
+## 5. Assets já produzidos (feed + stories, prontos pra postar)
+
+Todos em `redes-sociais/` (feed) e `redes-sociais/stories/` (stories), 1080×1080 e 1080×1920.
+
+| Arquivo | Conceito | Legenda sugerida (feed) |
+|---|---|---|
+| `concept-dado-real-feed.png` | A — O dado que ninguém te mostra | "A nota da Rodobens no Reclame Aqui não é discurso nosso — é dado público. 8.9/10, selo RA1000. Administradoras maiores em volume de vendas têm nota até 2 pontos menor. Confira você mesmo antes de decidir. Link na bio 🔗 #consorciorodobens #reclameaqui #oseuplano" |
+| `concept-pergunta-sorteio-feed.png` | B — A pergunta que 90% não fazem | "Sorteio manual ou loteria federal? Essa pergunta muda completamente suas chances de ser contemplado — e quase ninguém pergunta antes de assinar. A gente te mostra qual é o seu caso. Link na bio 🔗 #sorteiomanual #consorciorodobens #oseuplano" |
+| `concept-real-gravado-feed.png` | C — Real, gravado, sem atores | "Isso não é propaganda. É a assembleia de verdade, gravada, contemplando pessoas de verdade. Sorteio manual, transparente, público. Quer saber suas chances reais? Link na bio 🔗 #consorciorodobens #sorteiomanual #oseuplano" |
+| `concept-mercado-recorde-feed.png` | D — Mercado em recorde (ABAC) | "O Sistema de Consórcios bateu recorde histórico: +11,6% em 1 ano, 12,94 milhões de brasileiros dentro dessa oportunidade agora. A pergunta não é se ela existe — é se você vai continuar de fora. Link na bio 🔗 #consorcio #oportunidade #oseuplano" |
+
+Os 4 conceitos junto com os 7 posts do blog (já existentes) somam **11 peças de feed + 11 stories** no acervo — dá pra rodar um calendário de praticamente um mês sem repetir criativo.
+
+---
+
+## 6. Guia de produção de vídeo
+
+### 6.1 Especificações técnicas por formato
+
+| Item | Reels/Stories (vertical) | Feed (quadrado, se necessário) |
+|---|---|---|
+| Proporção | 9:16 | 1:1 ou 4:5 |
+| Duração ideal | 15-30s (máx. 45s) | 15-30s |
+| Legenda embutida (burned-in) | **Obrigatório** — 85% assiste sem som | Obrigatório |
+| Primeiro frame | Precisa funcionar sozinho como thumbnail (é o que aparece no feed antes do play) | idem |
+| Áudio | Voz clara + trilha de fundo baixa (10-15% do volume) | idem |
+| Zona segura de texto | Topo 250px e base 250px livres de texto essencial (UI do Instagram cobre essas áreas) | Margem de 8-10% em todas as bordas |
+
+### 6.2 Shot list — Roteiro 4 (depoimento real)
+
+Planeje a gravação como uma entrevista curta, não como um "comercial". Equipamento mínimo: celular + tripé + iluminação natural (perto de janela) + microfone de lapela se tiver (aumenta MUITO a qualidade percebida).
+
+| # | Plano | O que capturar | Uso na edição |
+|---|---|---|---|
+| 1 | Close médio, entrevistado olhando pra entrevistador (não pra câmera) | Resposta da pergunta 1 (o que achava que era) | Abertura / hook |
+| 2 | Mesmo enquadramento | Respostas 2 e 3 (decisão + dia da contemplação) | Corpo do vídeo |
+| 3 | Close no rosto, momento de emoção genuína (se houver) | Reação espontânea | Insert de 1-2s no meio, reforça autenticidade |
+| 4 | Plano aberto — entrevistado + ambiente (casa nova, carro novo, etc., se possível) | B-roll silencioso, 5-10s | Cobre cortes de fala, mostra o "resultado" concreto |
+| 5 | Mesmo enquadramento do 1 | Resposta 4 (conselho pra quem está inseguro) | Fechamento |
+
+**Edição:** cortes seco a cada frase (não deixar pausas longas), legenda em todas as falas, música instrumental baixa por baixo, CTA em texto nos últimos 3 segundos — não precisa narração adicional, a voz do próprio cliente já é a prova.
+
+### 6.3 Cadência de publicação sugerida
+
+- **Reels/vídeo:** 2-3 por semana (é o formato de melhor custo por resultado — priorizar)
+- **Feed estático/carrossel:** 2-3 por semana, intercalando conceito de prova (A, C), educativo (posts do blog) e oportunidade (B, D)
+- **Stories:** diário, mesmo que reaproveitando o mesmo conteúdo do feed em formato de sequência com enquete
+
+---
+
+## 7. Checklist antes de publicar qualquer criativo novo
 
 - [ ] Tem hook nos primeiros 3 segundos (fala, texto ou imagem de impacto)?
 - [ ] Tem UM benefício claro, não três?
