@@ -57,6 +57,43 @@ O padrão que a Rodobens usa (headline grande, casal feliz, banner de desconto, 
 2. **Não tem hook de 3 segundos.** O criativo institucional é pra ser admirado, não pra interromper um scroll. Precisa de um gancho no primeiro frame/segunda.
 3. **CTA genérico ("Contrate agora") em vez de CTA de baixo atrito** ("Simule grátis", "Descubra sua parcela em 1 minuto") — CTA de compra direta funciona em quem já está convencido; CTA de baixo atrito converte quem ainda está decidindo, que é a maior parte da audiência fria.
 
+**Decisão (2026-07-25):** em vez de abandonar o padrão institucional, adotamos a
+**composição** dele — ela é boa, testada, reconhecível — mas resolvendo os 3
+pontos acima e mantendo a identidade visual O Seu Plano (dourado/dark) em vez
+das cores institucionais da Rodobens (verde). Ver 1.6.
+
+### 1.6 Padrão visual oficial — criativos de campanha/oferta (a partir de agora)
+
+Toda peça que tiver caráter de "campanha" (oferta específica, grupo aberto,
+dado de destaque) segue esta composição, só trocando foto/texto/dado:
+
+1. **Foto dominante à direita** (~60-70% da largura no feed, ~55-60% da altura
+   no story), com um degradê horizontal (feed) ou vertical (story) que funde
+   a foto no fundo escuro à esquerda/embaixo — nunca a foto "cortando" o
+   texto sem transição.
+2. **Headline em 2 linhas/2 cores**, canto superior esquerdo: primeira linha
+   branca, segunda linha (a mais importante) em gradiente dourado da marca —
+   nunca mais de 2-3 linhas, letra bem grande (peso 800).
+3. **Subtítulo curto** (1 frase) logo abaixo, peso 600, cor branca 75% opaca.
+4. **Pill/faixa principal em gradiente dourado**, com o dado mais forte do
+   material (preço, parcela, nota, %) — sempre 2 linhas: rótulo pequeno em
+   cima, valor grande embaixo. Fundo sempre **opaco** (nunca transparente
+   sobre a foto — testamos e fica ilegível).
+5. **Selo(s) secundário(s)** ao lado da pill principal, fundo sólido escuro
+   (não transparente), reforçando prova (nota Reclame Aqui, prazo, nome do
+   grupo).
+6. **Linha de CTA**: 3 bolinhas (dourada, branca, cinza — não usar verde, é
+   cor da Rodobens) + texto do CTA em caixa alta, peso 800.
+7. **Texto legal pequeno** (opcional), cinza 28% opaco, só se houver
+   condição/valor específico que precise de ressalva.
+8. **Logo O Seu Plano** no canto inferior direito (marca + wordmark), no
+   lugar onde o institucional coloca "Rodobens 75 anos".
+
+Exemplo já produzido com esse padrão: `grupo-2122/grupo2122-campanha-feed.png`
+e `grupo-2122/grupo2122-campanha-story.png` (fonte: `scripts` internos,
+ver histórico de geração). Use como referência de proporção/hierarquia para
+qualquer campanha nova — só reaproveitar a estrutura, trocando foto e dados.
+
 ---
 
 ## 2. Nova linha de criativos — Feed
@@ -85,10 +122,11 @@ Cada conceito abaixo é pensado pra rodar como anúncio (tráfego pago) e també
 **Por que funciona:** conteúdo com "prova ao vivo" bate anúncio 100% institucional em confiança — pessoas confiam mais no que parece cru/real do que no polido demais.
 
 ### Conceito D — Campanha promocional (equivalente ao criativo oficial, versão performance)
-Mantém a essência do criativo institucional (desconto na 1ª parcela, prazo, selos) mas resolve os 3 pontos da seção 1.5:
-- Hook no topo: "Só até [data]: primeira parcela com 20% de desconto" (urgência real, não genérica)
+Mantém a essência do criativo institucional (desconto na 1ª parcela, prazo, selos) mas resolve os 3 pontos da seção 1.5, seguindo o **padrão visual oficial da seção 1.6**:
+- Hook no topo: "Só até [data]: primeira parcela com 20% de desconto" (urgência real, não genérica) — **só usar se a oferta for real e verificada**, nunca inventar prazo/desconto
 - Prova ao lado do banner de desconto: badge pequeno "Nota 8.9 no Reclame Aqui"
 - CTA único: "Simular agora" (não "Contrate agora" — reduz o atrito de quem ainda não decidiu)
+- Execução de referência: `grupo-2122/grupo2122-campanha-feed.png`
 
 ---
 

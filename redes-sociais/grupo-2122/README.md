@@ -62,7 +62,16 @@ INCC, Prêmio Pontualidade, débito automático.
 
 ## O criativo
 
-Arquivos: `grupo2122-feed.png` (1080×1080) e `grupo2122-story.png` (1080×1920).
+Duas versões, mesmo conteúdo/dados, formatos visuais diferentes:
+
+- `grupo2122-feed.png` / `grupo2122-story.png` — versão "card de dados"
+  (fundo escuro, sem foto, 3 ganchos em lista).
+- `grupo2122-campanha-feed.png` / `grupo2122-campanha-story.png` — versão no
+  **padrão visual oficial de campanha** (ver seção 1.6 de
+  `estrategia-criativos-performance.md`): foto de imóvel dominante, headline
+  em 2 cores, pill dourada com o dado principal (R$ 300 mil → R$ 1.909,79/mês)
+  e selo de nota Reclame Aqui. Essa é a referência a seguir para os próximos
+  criativos de campanha/oferta.
 
 **Legenda sugerida (feed):**
 
