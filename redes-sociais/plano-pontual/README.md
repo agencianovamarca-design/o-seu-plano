@@ -1,9 +1,18 @@
 # Plano Pontual — Automóveis (30 criativos de alta conversão)
 
-15 conceitos × 2 formatos (feed 1080×1080 + story 1080×1920) = 30 peças,
+30 conceitos × 2 formatos (feed 1080×1080 + story 1080×1920) = 60 peças,
 todos baseados nas **tabelas oficiais Rodobens** e na mecânica oficial do
 Plano Pontual. Legendas prontas (com CTA duplo WhatsApp + site) em
 `legendas.txt` nesta pasta.
+
+**Realidade brasileira nas fotos:** sem carros de luxo/ostentação — as fotos
+usadas são de um BYD Dolphin/SUV (nítido, sem desfoque, foco no carro) e
+cenas reais de recarga elétrica. Textos apelam pra inovação das marcas
+chinesas que dominam o mercado brasileiro hoje (BYD, GWM, CAOA Changan,
+Geely) e pro ganho real do cliente com elétrico (custo de recarga vs.
+gasolina). Ao trocar fotos no futuro, manter esse padrão: carro sempre em
+foco nítido, sem blur artístico, marcas populares no Brasil, nunca
+supercarro/importado de luxo.
 
 ## Dados-fonte (tabelas oficiais, abril/2026 — dados perecíveis, revisar antes de reusar)
 
@@ -56,6 +65,25 @@ Fontes: [página oficial do Consórcio Pontual](https://rodobens.com.br/consorci
 13. `pontual-13-100mil` — R$ 100 mil por R$ 2.148,15
 14. `pontual-14-custo-235` — 23,5% de custo total transparente
 15. `pontual-15-seguro` — seguro prestamista incluso
+
+**Com foto (rodada 2 — foco em elétricos/marcas chinesas e novos públicos):**
+16. `pontual-16-carro-de-trabalho` — carro de trabalho vira patrimônio (motorista de app, entregador)
+17. `pontual-17-24-em-dia` — caminho sem antecipar: 24 parcelas pontuais consecutivas migram sozinhas
+18. `pontual-18-negocia-a-vista` — carta de crédito = poder de negociação de quem paga à vista
+19. `pontual-19-6-meses-chave` — reforço do atalho de 6 meses, com o regulamento em destaque
+20. `pontual-20-segundo-carro` — 2º carro da família é elétrico, recarga barata ajuda a pagar a parcela
+21. `pontual-21-frota-pj` — frota elétrica pra empresário, caixa preservado
+22. `pontual-22-sorte-ao-vivo` — sorteio manual real + pontualidade = dois caminhos até o carro
+
+**Cards de dados (rodada 2):**
+23. `pontual-23-parcela-1082` — R$ 50 mil por R$ 1.082,81/mês (degrau do meio, Grupo 6795)
+24. `pontual-24-zero-compostos` — zero juros compostos, custo fixo do início ao fim
+25. `pontual-25-sem-entrada` — sem 20-30% de entrada de banco, só a 1ª parcela
+26. `pontual-26-6a-assembleia` — o atalho oficial: régua a partir da 6ª assembleia
+27. `pontual-27-ipca` — correção pelo índice público, sem letra miúda
+28. `pontual-28-mercado-alta` — dado ABAC: +10,2% em 12 meses no consórcio de veículos leves
+29. `pontual-29-3-faixas` — os 3 grupos/faixas de crédito lado a lado
+30. `pontual-30-custo-de-esperar` — urgência: cada mês de espera é uma assembleia a menos
 
 ## Compliance (não remover das peças)
 
