@@ -323,3 +323,5 @@ Planeje a gravação como uma entrevista curta, não como um "comercial". Equipa
 - [ ] Alguma afirmação pode virar prova verificável (nota, dado, vídeo real)? Se sim, mostre a prova, não só a afirmação.
 - [ ] Está gerando pelo menos 2 variações pra testar?
 - [ ] Se citar números de concorrência, são de fonte pública (Reclame Aqui, ABAC) e não citam a concorrente pelo nome sem necessidade — usar "média do mercado" ou "outras administradoras" evita fricção desnecessária.
+- [ ] **Feed:** o bloco de texto está centralizado verticalmente (não colado na borda inferior)? Corrigido em 2026-07-24 nos posts do blog — manter esse padrão em tudo que for novo.
+- [ ] **Stories:** nada essencial (logo, título, CTA, legenda) a menos de ~220-250px do topo ou da base? É exatamente onde o Instagram sobrepõe usuário/barra de progresso (topo) e caixa de resposta (base). Corrigido em 2026-07-25 em todo o acervo — todo gerador novo deve nascer já respeitando essa margem.
