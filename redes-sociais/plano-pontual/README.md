@@ -47,17 +47,24 @@ Fontes: [página oficial do Consórcio Pontual](https://rodobens.com.br/consorci
 
 ## Os 15 conceitos
 
+> **Piso de crédito nas peças (importante):** não usamos cartas de R$ 40 mil.
+> A Rodobens só libera crédito de veículo para carros com até 10 anos de uso e,
+> na prática, não há opção viável de R$ 40 mil no Brasil hoje. Por isso o piso
+> comunicado nos criativos é **R$ 50 mil** (Grupo 6795) e o crédito "de entrada"
+> exemplificado é **R$ 100 mil** (Grupo 6838, R$ 2.148,15/mês), coerente com os
+> elétricos populares (BYD, GWM, CAOA Changan, Geely). Ajuste feito em 2026-07-25.
+
 **Com foto (padrão campanha):**
 1. `pontual-01-data-marcada` — previsibilidade: "carro novo com data pra chegar" (até 6 meses*)
-2. `pontual-02-carro-866` — preço de entrada: R$ 40 mil por R$ 866,25/mês
-3. `pontual-03-pagou-12` — a regra de destravamento: 12 parcelas (normais OU antecipadas)
+2. `pontual-02-carro-866` — elétrico a partir de R$ 100 mil por R$ 2.148,15/mês (Grupo 6838)
+3. `pontual-03-pagou-12` — regra de destravamento: a partir da 6ª parcela, mediante antecipação das 18 restantes até completar 24
 4. `pontual-04-contemplacao-mes` — "mais de uma contemplação por mês" (frase da tabela) + foto real do sorteio
-5. `pontual-05-200mil` — upgrade: R$ 200 mil por R$ 4.296,31 (FX II, menor taxa)
+5. `pontual-05-200mil` — upgrade pro elétrico: R$ 200 mil por R$ 4.296,31 (FX II, menor taxa)
 6. `pontual-06-sem-leilao` — sem leilão/disputa: pontualidade = contemplação
-7. `pontual-07-grupos-abertos` — urgência: 3 grupos abertos, R$ 40–200 mil
+7. `pontual-07-grupos-abertos` — urgência: 3 grupos abertos, R$ 50–200 mil (a partir de R$ 1.082,81/mês)
 
 **Cards de dados (números gigantes):**
-8. `pontual-08-parcela-866` — R$ 866,25/mês
+8. `pontual-08-parcela-866` — R$ 2.148,15/mês (R$ 100 mil, Grupo 6838)
 9. `pontual-09-taxa-038` — 0,38% a.m. equivalente
 10. `pontual-10-grupo-120` — 120 participantes
 11. `pontual-11-2em1` — consórcio + crédito
