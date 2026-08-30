@@ -6,34 +6,34 @@ import { ChevronDown, ArrowRight } from "lucide-react";
 
 const faqs = [
   {
-    question: "Consórcio é furada?",
+    question: "Por que e-mail profissional faz diferença?",
     answer:
-      "Não. O que é furada é pagar juros compostos durante 30 anos e entregar mais de 2x o valor do seu imóvel ao banco. O consórcio não tem juros — apenas uma taxa de administração diluída ao longo do prazo. O problema real foram vendedores desonestos que prejudicaram a imagem do segmento. Com uma administradora séria e profissionais comprometidos, o consórcio é uma das formas mais inteligentes de adquirir bens.",
+      "Porque o cliente percebe. Um e-mail @gmail.com ou @hotmail.com passa a mensagem de que o negócio não é estruturado — mesmo que você seja excelente no que faz. Já contato@suaempresa.com.br transmite profissionalismo, confiança e seriedade antes da primeira palavra. Custa menos de R$ 30/mês e leva menos de 24h para configurar.",
   },
   {
-    question: "Quanto tempo leva para ser contemplado?",
+    question: "Quanto tempo leva para ter minha presença digital?",
     answer:
-      "Depende. Você pode ser contemplado no primeiro mês por sorteio ou oferecer um lance para antecipar. Com sorteio manual e grupos menores (até 999 para imóveis (Faixa I)), as chances reais de contemplação são muito maiores do que em administradoras que usam loteria federal com milhares de participantes.",
+      "E-mail profissional: menos de 24h. Google Meu Negócio e Instagram otimizado: 2 a 3 dias. Site ou landing page básica: 5 a 7 dias. Estratégia de conteúdo completa: até 15 dias. Dependendo do que você precisa agora, o resultado aparece muito rápido.",
   },
   {
-    question: "Qual a diferença entre consórcio e financiamento?",
+    question: "Preciso saber de tecnologia para usar o guia?",
     answer:
-      "No financiamento, você recebe o bem imediatamente mas paga juros compostos que podem mais que dobrar o valor. Exemplo: imóvel de R$ 300 mil custa R$ 720 mil+ no financiamento. No consórcio, você paga parcelas sem juros (taxa de administração de até 28,5% diluída) e pode ser contemplado a qualquer momento. O total pago fica em torno de R$ 385 mil — uma economia enorme.",
+      "Não. Nosso guia foi criado exatamente para quem não tem conhecimento técnico. Cada passo é explicado com prints, vídeos e linguagem simples. Se você consegue usar o WhatsApp, consegue seguir nosso passo a passo.",
   },
   {
-    question: "O que é sorteio manual?",
+    question: "Funciona para qualquer tipo de negócio?",
     answer:
-      "O sorteio manual é realizado diretamente nas assembleias, com participação ativa do grupo. Diferente de administradoras que usam a loteria federal (onde suas chances são equivalentes a ganhar na mega-sena), o sorteio manual garante que todos os participantes tenham chances reais de contemplação.",
+      "Sim. Médicos, advogados, barbeiros, manicures, restaurantes, e-commerces, construtoras, MEI, profissionais liberais — qualquer negócio que precisa de clientes e ainda não tem presença digital profissional pode usar. O processo é adaptável para qualquer nicho.",
   },
   {
-    question: "Posso usar o consórcio como investimento?",
+    question: "Qual a diferença entre site e landing page?",
     answer:
-      "Sim, e essa é uma das estratégias mais inteligentes. Você pode adquirir um imóvel via consórcio e colocá-lo para render no Airbnb ou aluguel tradicional. O retorno mensal pode pagar as parcelas do consórcio e ainda gerar renda passiva. É fazer o dinheiro trabalhar para você, não contra você.",
+      "Um site institucional tem várias páginas (home, sobre, serviços, contato) e apresenta o negócio de forma completa. Uma landing page é uma página única focada em converter — capturar um lead, vender um produto, agendar um horário. Para quem está começando, uma landing page bem feita costuma trazer resultado mais rápido.",
   },
   {
-    question: "E se eu não for contemplado logo?",
+    question: "Vocês também fazem o serviço por mim?",
     answer:
-      "Seu dinheiro continua rendendo e suas parcelas vão reduzindo o saldo devedor. Você participa do sorteio todo mês e pode dar um lance a qualquer momento. Diferente do financiamento, onde você já está pagando juros desde o primeiro dia, no consórcio cada parcela é patrimônio sendo construído.",
+      "Sim. Além dos guias de autoajuda, oferecemos mentoria individual onde analisamos seu caso e montamos o plano de ação personalizado. E para quem quiser que a gente faça tudo, temos serviços de execução completa. Converse com a gente pelo WhatsApp para entender qual opção se encaixa melhor no seu momento.",
   },
 ];
 
@@ -80,8 +80,8 @@ export function FAQSection() {
             Perguntas frequentes
           </p>
           <h2 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-white leading-[0.95]">
-            Desmistificando o{" "}
-            <span className="text-gradient-gold italic">consórcio.</span>
+            Tudo que você precisa{" "}
+            <span className="text-gradient-gold italic">saber.</span>
           </h2>
         </AnimateIn>
 

@@ -20,23 +20,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "O Seu Plano | Entenda o Jogo Antes de Entrar",
+  title: "O Seu Plano | Presença Digital que Gera Clientes",
   description:
-    "Portal educativo sobre consórcios. Descubra como adquirir imóveis e veículos de forma inteligente, sem pagar juros abusivos. Informação é poder.",
+    "Ajudamos empresas, MEI e profissionais liberais a ter presença digital profissional. E-mail no domínio próprio, redes sociais estruturadas, site e estratégia que gera clientes reais.",
   keywords: [
-    "consórcio",
-    "consórcio inteligente",
-    "imóveis",
-    "veículos",
-    "educação financeira",
-    "consórcio vs financiamento",
-    "sorteio manual",
+    "presença digital",
+    "e-mail profissional",
+    "marketing digital",
+    "redes sociais para empresas",
+    "site profissional",
+    "estratégia digital",
+    "MEI digital",
     "O Seu Plano",
   ],
   openGraph: {
-    title: "O Seu Plano | Entenda o Jogo Antes de Entrar",
+    title: "O Seu Plano | Presença Digital que Gera Clientes",
     description:
-      "Informação é poder. Descubra como o consórcio pode mudar sua vida.",
+      "Seu negócio merece parecer profissional. Do @gmail ao @suaempresa — a gente resolve.",
     url: "https://oseuplano.com",
     siteName: "O Seu Plano",
     locale: "pt_BR",

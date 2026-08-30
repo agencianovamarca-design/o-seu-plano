@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimateIn } from "@/components/AnimateIn";
-import { BookOpen, FileText, Star, ArrowRight, Download, ShoppingCart } from "lucide-react";
+import { BookOpen, Zap, Star, ArrowRight, Download, ShoppingCart } from "lucide-react";
 
 const products = [
   {
@@ -9,15 +9,15 @@ const products = [
     badge: "GRATUITO",
     badgeColor: "bg-electric/10 text-electric border-electric/20",
     icon: Download,
-    title: "O Guia do Consórcio Inteligente",
-    subtitle: "E-book — 5 páginas",
+    title: "7 Erros que Fazem Sua Empresa Perder Clientes Online",
+    subtitle: "E-book gratuito — guia prático",
     description:
-      "Descubra por que 90% das pessoas pagam mais do que deveriam na aquisição de imóveis e veículos. Com dados reais e comparativos que o banco não quer que você veja.",
+      "Descubra os erros mais comuns que fazem empresas e profissionais liberais perderem credibilidade — e clientes — antes mesmo de ter a primeira conversa.",
     features: [
-      "Comparativo consórcio vs financiamento com números reais",
-      "Como calcular o custo total de um financiamento",
-      "Estratégia de lance para contemplação antecipada",
-      "Simulações com créditos de R$ 300k a R$ 1 milhão",
+      "Por que @gmail.com afasta clientes sérios",
+      "O que uma bio ruim no Instagram comunica sobre seu negócio",
+      "Como a falta de site faz você perder para a concorrência",
+      "Checklist: sua empresa está pronta para o digital?",
     ],
     price: "Grátis",
     priceNote: "Baixe agora sem compromisso",
@@ -27,23 +27,23 @@ const products = [
     highlight: false,
   },
   {
-    id: "ebook-premium",
+    id: "kit-presenca-digital",
     badge: "MAIS VENDIDO",
     badgeColor: "bg-gold/10 text-gold border-gold/20",
-    icon: BookOpen,
-    title: "Manual Completo do Consórcio para Investidores",
-    subtitle: "E-book Premium — 40+ páginas",
+    icon: Zap,
+    title: "Kit Presença Digital Completo",
+    subtitle: "Guia passo a passo — acesso vitalício",
     description:
-      "O guia definitivo para quem quer usar o consórcio como ferramenta de construção de patrimônio. Do planejamento à contemplação, passo a passo.",
+      "O guia definitivo para qualquer empresa ou profissional ter presença digital profissional do zero. Do e-mail ao Google Meu Negócio, passo a passo.",
     features: [
-      "Estratégias avançadas de lance livre e fixo",
-      "Como usar FGTS como lance em consórcios de imóveis",
-      "Portfólio de consórcio: múltiplas cotas simultaneamente",
-      "Consórcio + Airbnb: construção de renda passiva",
-      "Checklist completo: o que verificar antes de assinar",
-      "Modelos de simulação com planilhas editáveis",
+      "Como ter e-mail no seu domínio em menos de 24h",
+      "Google Meu Negócio: configuração completa para aparecer no Maps",
+      "Bio e perfil do Instagram que converte visitante em cliente",
+      "Roteiro de conteúdo para os primeiros 30 dias",
+      "Como usar WhatsApp Business de forma profissional",
+      "Templates prontos para stories, posts e mensagens",
     ],
-    price: "R$ 47,00",
+    price: "R$ 97,00",
     priceNote: "Acesso vitalício + atualizações",
     cta: "Comprar na Hotmart",
     hotmartUrl: "LINK_HOTMART_AQUI",
@@ -51,23 +51,23 @@ const products = [
     highlight: true,
   },
   {
-    id: "consultoria",
+    id: "mentoria-digital",
     badge: "EXCLUSIVO",
     badgeColor: "bg-white/5 text-white/50 border-white/10",
     icon: Star,
-    title: "Análise Estratégica Personalizada",
-    subtitle: "Consultoria individual — 60 min",
+    title: "Mentoria Estratégica Individual",
+    subtitle: "Sessão 1h — diagnóstico personalizado",
     description:
-      "Sessão individual de análise do seu perfil financeiro e definição do melhor plano de consórcio para o seu objetivo. Inclui relatório personalizado.",
+      "Sessão individual de análise da sua presença digital atual e montagem do plano de ação personalizado para o seu negócio específico.",
     features: [
-      "Análise completa do seu perfil financeiro",
-      "Simulações personalizadas para seu objetivo",
-      "Estratégia de contemplação definida para seu caso",
-      "Relatório PDF exclusivo pós-sessão",
+      "Diagnóstico completo da sua presença digital atual",
+      "Plano de ação prático e realista para o seu nicho",
+      "Definição das prioridades: o que resolver primeiro",
+      "Relatório PDF exclusivo pós-sessão com todos os passos",
     ],
     price: "R$ 197,00",
-    priceNote: "Sessão via WhatsApp ou videoconferência",
-    cta: "Contratar na Hotmart",
+    priceNote: "Via WhatsApp ou videoconferência",
+    cta: "Agendar na Hotmart",
     hotmartUrl: "LINK_HOTMART_AQUI",
     isExternal: true,
     highlight: false,
@@ -84,14 +84,14 @@ export function ProdutosContent() {
             Materiais & Serviços
           </p>
           <h1 className="font-heading text-[clamp(2.5rem,6vw,5rem)] font-extrabold text-white leading-[0.95] mb-6">
-            Conhecimento que{" "}
-            <span className="text-gradient-gold italic">transforma</span>
+            Ferramentas que{" "}
+            <span className="text-gradient-gold italic">transformam</span>
             <br />
-            decisões.
+            sua presença.
           </h1>
           <p className="text-white/40 text-lg max-w-2xl leading-relaxed">
-            Materiais desenvolvidos por especialistas em consórcio para quem
-            quer tomar decisões financeiras com dados reais — não com achismo.
+            Do guia gratuito à mentoria individual — escolha o que faz sentido
+            para o momento do seu negócio e comece a parecer profissional hoje.
           </p>
         </AnimateIn>
       </div>
@@ -123,9 +123,7 @@ export function ProdutosContent() {
                   <div className="flex items-start gap-4 mb-6">
                     <div
                       className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 ${
-                        product.highlight
-                          ? "bg-gold/10"
-                          : "bg-white/[0.04]"
+                        product.highlight ? "bg-gold/10" : "bg-white/[0.04]"
                       }`}
                     >
                       <Icon
@@ -189,7 +187,7 @@ export function ProdutosContent() {
                           {product.cta}
                         </button>
                         <p className="text-center text-[10px] text-white/20 uppercase tracking-wider">
-                          Link Hotmart em breve
+                          Link em breve — fale pelo WhatsApp
                         </p>
                       </div>
                     ) : (

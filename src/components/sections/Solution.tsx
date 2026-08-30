@@ -2,35 +2,35 @@
 
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
-import { BookOpen, Eye, Handshake, Target } from "lucide-react";
+import { Zap, Eye, HeartHandshake, TrendingUp } from "lucide-react";
 
 const pillars = [
   {
-    icon: BookOpen,
-    title: "Educação",
+    icon: Zap,
+    title: "Rapidez",
     description:
-      "Conteúdo claro e acessível para todos. Fundamentos do consórcio na prática, sem termos confusos.",
+      "E-mail profissional ativo em menos de 24h. Google Meu Negócio configurado. Instagram com bio que converte. Tudo isso sem precisar saber de tecnologia.",
     color: "text-electric",
   },
   {
     icon: Eye,
-    title: "Transparência",
+    title: "Clareza",
     description:
-      "Todas as informações sem pegadinhas. Mostramos os números reais — o que você paga e o que recebe.",
+      "Cada passo explicado de forma simples. Nada de termos técnicos. Você segue o guia e o resultado aparece — sem precisar contratar uma agência cara.",
     color: "text-gold",
   },
   {
-    icon: Handshake,
-    title: "Confiança",
+    icon: HeartHandshake,
+    title: "Suporte",
     description:
-      "Nosso compromisso é com o seu plano de vida, não com comissões. Profissionais que trabalham para você.",
+      "Não fica sozinho. Nosso atendimento via WhatsApp acompanha você durante todo o processo. Dúvida surgiu? A gente resolve junto.",
     color: "text-bronze",
   },
   {
-    icon: Target,
+    icon: TrendingUp,
     title: "Resultado",
     description:
-      "Planejamento personalizado para o seu momento. Seu sonho é o nosso objetivo.",
+      "Mais credibilidade, mais confiança do cliente, mais conversões. Presença profissional no digital não é luxo — é o mínimo para competir hoje.",
     color: "text-green-400",
   },
 ];
@@ -42,28 +42,28 @@ export function SolutionSection() {
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left - image + heading */}
+          {/* Left - heading + image */}
           <AnimateIn>
             <div className="lg:sticky lg:top-32">
               <p className="text-[11px] font-semibold text-gold uppercase tracking-[0.25em] mb-6">
-                Nossa missão
+                Nossa abordagem
               </p>
               <h2 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-white leading-[0.95] mb-8">
-                Criamos O Seu Plano para{" "}
+                A gente resolve{" "}
                 <span className="text-gradient-gold italic">
-                  mudar o jogo.
+                  tudo isso por você.
                 </span>
               </h2>
               <p className="text-white/35 text-base leading-relaxed max-w-md mb-8">
-                Dedicados a educar consumidores e transformar o mercado de
-                aquisição de bens de forma inteligente, gerando segurança e
-                confiabilidade.
+                Do e-mail profissional ao funil de vendas — estruturamos a
+                presença digital do seu negócio de forma simples, rápida e com
+                resultado real. Funciona para qualquer nicho.
               </p>
               {/* Image */}
               <div className="relative h-72 rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75"
-                  alt="Casa moderna representando conquista"
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=75"
+                  alt="Profissional trabalhando com presença digital"
                   fill
                   className="object-cover"
                 />

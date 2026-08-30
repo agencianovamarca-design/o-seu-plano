@@ -1,22 +1,22 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { Logo } from "@/components/Logo";
 
 const navLinks = [
+  { href: "/servicos", label: "Serviços" },
   { href: "/como-funciona", label: "Como Funciona" },
   { href: "/produtos", label: "Produtos" },
-  { href: "/simulador", label: "Simulador" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
   { href: "/contato", label: "Contato" },
 ];
 
 const educationLinks = [
-  { href: "/blog/consorcio-vs-financiamento", label: "Consórcio vs Financiamento" },
-  { href: "/blog/como-funciona-sorteio", label: "Como Funciona o Sorteio" },
-  { href: "/blog/mitos-consorcio", label: "Mitos sobre Consórcio" },
-  { href: "/blog/investir-com-consorcio", label: "Investir com Consórcio" },
+  { href: "/blog/email-profissional", label: "E-mail profissional vs Gmail" },
+  { href: "/blog/estrutura-social-media", label: "Como estruturar redes sociais" },
+  { href: "/blog/site-ou-landing-page", label: "Site ou Landing Page?" },
+  { href: "/blog/leads-instagram", label: "Como gerar leads pelo Instagram" },
 ];
 
 export function Footer() {
@@ -31,16 +31,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Image
-              src="/images/logo-nav.png"
-              alt="O Seu Plano"
-              width={310}
-              height={50}
-              className="h-10 w-auto mb-6"
-            />
+            <div className="mb-6">
+              <Logo iconSize={34} />
+            </div>
             <p className="text-white/25 text-sm leading-relaxed mb-8">
-              Educando consumidores e transformando o mercado de consórcios.
-              Informação é poder.
+              Transformamos presença digital em resultado real para qualquer
+              empresa, MEI ou profissional liberal.
             </p>
             <div className="flex gap-3">
               <a

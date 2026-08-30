@@ -2,15 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { NewsTicker } from "@/components/NewsTicker";
+import { Logo } from "@/components/Logo";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/servicos", label: "Serviços" },
   { href: "/como-funciona", label: "Como Funciona" },
   { href: "/produtos", label: "Produtos" },
-  { href: "/simulador", label: "Simulador" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -36,14 +36,7 @@ export function Navbar() {
         }`}
       >
         <Link href="/" aria-label="Página inicial">
-          <Image
-            src="/images/logo-nav.png"
-            alt="O Seu Plano"
-            width={280}
-            height={45}
-            className="h-9 w-auto"
-            priority
-          />
+          <Logo iconSize={34} />
         </Link>
 
         {/* Desktop */}

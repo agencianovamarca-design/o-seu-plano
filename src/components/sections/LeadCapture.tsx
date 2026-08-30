@@ -48,19 +48,20 @@ export function LeadCaptureSection() {
                 <h2 className="font-heading text-2xl lg:text-3xl font-extrabold text-white leading-tight mb-4">
                   E-book grátis:{" "}
                   <span className="text-gradient-gold">
-                    Entenda o Jogo Antes de Entrar
+                    7 Erros que Fazem Sua Empresa Perder Clientes Online
                   </span>
                 </h2>
                 <p className="text-white/35 text-sm leading-relaxed mb-6">
-                  Tudo que você precisa saber sobre consórcio em um guia direto
-                  e sem enrolação. Os números que o banco não quer que você veja.
+                  Um guia direto ao ponto sobre os erros mais comuns que fazem
+                  empresas e profissionais perderem credibilidade — e clientes —
+                  antes mesmo de abrir a boca.
                 </p>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Comparativo real: consórcio vs financiamento",
-                    "Como funciona o sorteio manual",
-                    "Estratégias de lance para ser contemplado",
-                    "Checklist para escolher a administradora certa",
+                    "Por que @gmail.com custa clientes todos os dias",
+                    "O que um Instagram desatualizado comunica ao mercado",
+                    "Como a falta de site faz você perder para a concorrência",
+                    "Checklist: sua empresa está pronta para o digital?",
                   ].map((item) => (
                     <li
                       key={item}

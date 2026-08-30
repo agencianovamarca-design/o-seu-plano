@@ -1,52 +1,60 @@
-export function Logo({ className = "h-10 w-auto" }: { className?: string }) {
+"use client";
+
+export function Logo({ iconSize = 36 }: { iconSize?: number }) {
+  const gap = Math.round(iconSize * 0.09);
+  const cell = Math.round((iconSize - gap * 2) / 3);
+
+  const cx = (col: number) => col * (cell + gap);
+  const cy = (row: number) => row * (cell + gap);
+
+  const titleSize = Math.round(iconSize * 0.52);
+  const subSize = Math.round(iconSize * 0.23);
+  const textGap = Math.round(iconSize * 0.12);
+  const marginLeft = Math.round(iconSize * 0.36);
+
   return (
-    <svg
-      viewBox="0 0 200 60"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-label="O Seu Plano"
-    >
-      <defs>
-        <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#B87333" />
-          <stop offset="50%" stopColor="#FFA300" />
-          <stop offset="100%" stopColor="#FFD080" />
-        </linearGradient>
-      </defs>
-      {/* Icon - geometric squares inspired by the brand */}
-      <rect x="2" y="8" width="18" height="4" rx="0.5" fill="url(#gold-grad)" />
-      <rect x="2" y="8" width="4" height="18" rx="0.5" fill="url(#gold-grad)" />
-      <rect x="24" y="8" width="4" height="4" rx="0.5" fill="url(#gold-grad)" />
-      <rect x="14" y="20" width="6" height="6" rx="0.5" fill="#0047FF" />
-      <rect x="24" y="18" width="4" height="18" rx="0.5" fill="url(#gold-grad)" />
-      <rect x="10" y="32" width="18" height="4" rx="0.5" fill="url(#gold-grad)" />
-      <rect x="2" y="32" width="4" height="4" rx="0.5" fill="url(#gold-grad)" />
-      {/* Text */}
-      <text
-        x="38"
-        y="20"
-        fontFamily="Montserrat, sans-serif"
-        fontSize="11"
-        fontWeight="600"
-        letterSpacing="3"
-        fill="url(#gold-grad)"
+    <span className="inline-flex items-center" style={{ gap: marginLeft }}>
+      {/* Icon mark — 3×3 pixel grid, diagonal ascendente */}
+      <svg
+        width={iconSize}
+        height={iconSize}
+        viewBox={`0 0 ${iconSize} ${iconSize}`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        style={{ flexShrink: 0 }}
       >
-        O SEU PLANO
-      </text>
-      <text
-        x="38"
-        y="34"
-        fontFamily="Montserrat, sans-serif"
-        fontSize="6"
-        fontWeight="400"
-        letterSpacing="1.5"
-        fill="#9CA3AF"
-      >
-        ENTENDA O{" "}
-        <tspan fill="#0047FF">JOGO</tspan>
-        {" "}ANTES DE ENTRAR.
-      </text>
-    </svg>
+        {/* Linha 0 (topo): dim dim GOLD */}
+        <rect x={cx(0)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+        <rect x={cx(1)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+        <rect x={cx(2)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
+
+        {/* Linha 1 (centro): dim GOLD dim */}
+        <rect x={cx(0)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+        <rect x={cx(1)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
+        <rect x={cx(2)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+
+        {/* Linha 2 (base): GOLD dim dim */}
+        <rect x={cx(0)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
+        <rect x={cx(1)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+        <rect x={cx(2)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+      </svg>
+
+      {/* Wordmark */}
+      <span className="flex flex-col leading-none">
+        <span
+          className="font-heading font-extrabold text-white tracking-tight"
+          style={{ fontSize: titleSize }}
+        >
+          O SEU PLANO
+        </span>
+        <span
+          className="font-heading font-semibold text-gold tracking-[0.18em] uppercase"
+          style={{ fontSize: subSize, marginTop: textGap }}
+        >
+          Estratégia Digital
+        </span>
+      </span>
+    </span>
   );
 }

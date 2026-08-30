@@ -6,36 +6,36 @@ import { CountUp } from "@/components/CountUp";
 
 const problems = [
   {
-    stat: "R$ 400 mil+",
-    title: "desperdiçados em juros",
+    stat: "73%",
+    title: "usam e-mail não profissional",
     description:
-      "No financiamento de um imóvel de R$ 300 mil, você paga mais de R$ 700 mil ao banco. São mais de 2 imóveis jogados fora.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=75",
-    alt: "Dinheiro sendo desperdiçado",
+      "Mais de 7 em cada 10 pequenas empresas ainda usam @gmail ou @hotmail para negócios. Para o cliente, isso comunica falta de seriedade — antes mesmo de uma conversa.",
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&q=75",
+    alt: "Pessoa olhando para celular com e-mail",
   },
   {
-    stat: "30 anos",
-    title: "preso ao sistema",
+    stat: "Sem site",
+    title: "você já perdeu antes de começar",
     description:
-      "Enquanto você paga parcelas com juros abusivos, a vida passa. Decisões erradas custam décadas inteiras de trabalho.",
-    image: "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=600&q=75",
-    alt: "Relógio representando tempo perdido",
+      "Quando alguém pesquisa seu negócio e não encontra nada — ou encontra algo desatualizado — a decisão é tomada ali: vai para o concorrente que parece mais profissional.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=75",
+    alt: "Laptop com site profissional",
   },
   {
     stat: "Milhares",
-    title: "de pessoas enganadas",
+    title: "de clientes perdidos por aparência",
     description:
-      "O mercado de consórcios foi prejudicado por empresas e vendedores desonestos, gerando desconfiança generalizada.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=75",
-    alt: "Pessoa preocupada com documentos",
+      "Pesquisas mostram que a maioria das pessoas avalia a credibilidade de um negócio pela presença digital — antes mesmo de ter contato. Parecer amador custa caro.",
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&q=75",
+    alt: "Redes sociais no celular",
   },
   {
     stat: "90%",
-    title: "pagam mais do que deveriam",
+    title: "das empresas são invisíveis online",
     description:
-      "O sistema financeiro lucra com a sua falta de conhecimento. Você não foi ensinado a entender — foi feito para pagar.",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=75",
-    alt: "Pessoa analisando finanças",
+      "A grande maioria dos pequenos negócios não aparece quando o cliente procura. Estratégia de conteúdo e SEO básico mudam completamente esse jogo.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75",
+    alt: "Analítica de presença digital",
   },
 ];
 
@@ -48,20 +48,18 @@ export function ProblemSection() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         <AnimateIn className="mb-20">
           <p className="text-[11px] font-semibold text-electric uppercase tracking-[0.25em] mb-6">
-            A verdade que ninguém te conta
+            A realidade que ninguém fala
           </p>
           <h2 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-white leading-[0.95] max-w-4xl">
-            {"O sistema foi feito"}
-            <br />
-            {"para você "}
-            <span className="text-gradient-gold italic">{"não entender."}</span>
+            {"O mercado julga livros "}
+            <span className="text-gradient-gold italic">{"pela capa."}</span>
           </h2>
         </AnimateIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {problems.map((problem, i) => (
             <AnimateIn key={problem.title} delay={i * 0.1}>
-              <div className="group rounded-2xl overflow-hidden border border-white/[0.06] hover:border-red-400/10 transition-all duration-500 h-full">
+              <div className="group rounded-2xl overflow-hidden border border-white/[0.06] hover:border-gold/10 transition-all duration-500 h-full">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <Image
@@ -93,29 +91,20 @@ export function ProblemSection() {
 
         {/* Impact callout */}
         <AnimateIn delay={0.4}>
-          <div className="relative rounded-2xl overflow-hidden">
-            <Image
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=75"
-              alt="Família olhando para casa dos sonhos"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-deep/85 backdrop-blur-sm" />
-            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 p-10 lg:p-14">
-              <div>
-                <div className="text-[clamp(3rem,6vw,5rem)] font-extrabold text-gradient-gold font-heading leading-none">
-                  <CountUp end={67} suffix="%" />
-                </div>
-                <p className="text-white/30 text-sm mt-2 max-w-md">
-                  dos brasileiros pagam mais do que o dobro pelo seu imóvel no
-                  financiamento tradicional.
-                </p>
+          <div className="relative rounded-2xl overflow-hidden border border-gold/[0.08] bg-gold/[0.02] p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div>
+              <div className="text-[clamp(3rem,6vw,5rem)] font-extrabold text-gradient-gold font-heading leading-none">
+                <CountUp end={7} suffix=" dias" />
               </div>
-              <p className="text-white text-lg lg:text-xl font-heading font-semibold max-w-sm leading-snug">
-                Isso pode ser{" "}
-                <span className="text-gradient-gold">diferente.</span>
+              <p className="text-white/30 text-sm mt-2 max-w-md">
+                é tudo que leva para transformar sua presença digital
+                e começar a parecer tão profissional quanto os maiores do seu setor.
               </p>
             </div>
+            <p className="text-white text-lg lg:text-xl font-heading font-semibold max-w-sm leading-snug">
+              Isso pode mudar{" "}
+              <span className="text-gradient-gold">hoje.</span>
+            </p>
           </div>
         </AnimateIn>
       </div>

@@ -6,27 +6,27 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Marcos Oliveira",
-    role: "Empresário, João Pessoa - PB",
-    text: "Eu tinha medo de consórcio por tudo que já ouvi. A equipe do Seu Plano me explicou cada detalhe. Fui contemplado no 8.º mês sem dar lance. Hoje tenho meu apartamento.",
+    name: "Rodrigo Mendes",
+    role: "Advogado autônomo, Recife - PE",
+    text: "Eu usava @gmail faz anos e achava normal. Depois de configurar meu e-mail profissional com o guia do Seu Plano, dois clientes novos comentaram que me encontraram pelo Google e se sentiram mais seguros porque parecia um escritório sério.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=75",
   },
   {
-    name: "Ana Beatriz Santos",
-    role: "Professora, Campina Grande - PB",
-    text: "Já tinha financiamento de um carro e descobri que estava pagando quase 3 carros. Quitei e entrei no consórcio. A diferença é absurda. Me arrependo de não ter conhecido antes.",
+    name: "Mariana Fonseca",
+    role: "Manicure, Campina Grande - PB",
+    text: "Minha agenda virou bagunça. Com o WhatsApp Business e o perfil do Instagram estruturado — seguindo o passo a passo — comecei a receber clientes que me encontraram pela bio. Em um mês, dobrei os agendamentos.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=75",
   },
   {
-    name: "Ricardo Almeida",
-    role: "Engenheiro Civil, Recife - PE",
-    text: "Como engenheiro, faço as contas. No financiamento eu pagaria R$ 680 mil por um imóvel de R$ 280 mil. No consórcio, paguei R$ 322 mil. Os números falam por si.",
+    name: "Carlos Eduardo Lima",
+    role: "Proprietário de restaurante, Natal - RN",
+    text: "Meu restaurante não aparecia no Google Maps. Com a mentoria do Seu Plano, configuramos o Google Meu Negócio em uma tarde. Em duas semanas, já estava recebendo ligações de clientes novos que me encontraram na busca local.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=75",
   },
   {
-    name: "Fernanda Costa",
-    role: "Investidora, Natal - RN",
-    text: "Uso consórcio como estratégia de investimento. Compro imóveis para Airbnb e o retorno paga as parcelas e ainda gera renda passiva. O Seu Plano me abriu os olhos para isso.",
+    name: "Patrícia Souza",
+    role: "Coach de carreira, João Pessoa - PB",
+    text: "Tinha vergonha do meu Instagram — 23 posts em 3 anos. Depois do kit do Seu Plano, criei uma rotina de conteúdo e em 60 dias meu perfil estava trazendo clientes consistentes. A diferença foi ter um plano de verdade.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=75",
   },
 ];
@@ -43,15 +43,15 @@ export function TestimonialsSection() {
               Depoimentos
             </p>
             <h2 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-white leading-[0.95]">
-              Quem entendeu o jogo,{" "}
-              <span className="text-gradient-gold italic">mudou de vida.</span>
+              Quem estruturou,{" "}
+              <span className="text-gradient-gold italic">cresceu.</span>
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.2}>
             <div className="relative h-72 rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75"
-                alt="Família feliz em frente à casa nova"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=75"
+                alt="Equipe trabalhando em ambiente profissional"
                 fill
                 className="object-cover"
               />

@@ -1,34 +1,41 @@
 "use client";
 
 import { AnimateIn } from "@/components/AnimateIn";
-import { FileText, Users, Award, Home, ArrowRight } from "lucide-react";
-import { VideoPlayer } from "@/components/VideoPlayer";
+import { MessageSquare, Map, Rocket, ArrowRight } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    icon: FileText,
-    title: "Escolha seu plano",
-    description: "Definimos juntos o crédito ideal para seu objetivo — imóvel, veículo ou investimento.",
+    icon: MessageSquare,
+    title: "Diagnóstico gratuito",
+    description:
+      "Uma conversa de 15 minutos pelo WhatsApp para entender onde seu negócio está hoje e o que precisa ser resolvido com mais urgência.",
   },
   {
     number: "02",
-    icon: Users,
-    title: "Entre no grupo",
-    description: "Grupos com poucos participantes. Parcelas mensais sem juros compostos, apenas taxa de administração.",
+    icon: Map,
+    title: "Montamos seu plano",
+    description:
+      "Com base no seu nicho e objetivo, definimos as prioridades: e-mail profissional, redes, Google Meu Negócio, site ou funil de vendas.",
   },
   {
     number: "03",
-    icon: Award,
-    title: "Seja contemplado",
-    description: "Por sorteio manual (chances reais todo mês) ou por lance. Sem depender de sorte nível mega-sena.",
+    icon: Rocket,
+    title: "Execução e resultado",
+    description:
+      "Você executa com nosso guia ou contrata nosso serviço completo. Em 7 a 30 dias, sua presença digital está profissional e gerando clientes.",
   },
-  {
-    number: "04",
-    icon: Home,
-    title: "Realize seu sonho",
-    description: "Crédito em mãos, compre com poder de negociação de quem paga à vista.",
-  },
+];
+
+const services = [
+  "E-mail no seu domínio (@suaempresa.com.br)",
+  "Google Meu Negócio configurado e otimizado",
+  "Bio e perfil do Instagram que converte",
+  "WhatsApp Business profissional",
+  "Site ou landing page que gera leads",
+  "Estratégia de conteúdo para os primeiros 30 dias",
+  "Funil de vendas com captura de leads",
+  "Produtos digitais para gerar caixa rápido",
 ];
 
 export function HowItWorksSection() {
@@ -48,7 +55,7 @@ export function HowItWorksSection() {
         </AnimateIn>
 
         {/* Steps grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.06] rounded-2xl overflow-hidden mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.06] rounded-2xl overflow-hidden mb-16">
           {steps.map((step, i) => (
             <AnimateIn key={step.number} delay={i * 0.12}>
               <div className="bg-deep p-8 lg:p-10 h-full group hover:bg-white/[0.01] transition-colors duration-500 relative">
@@ -74,32 +81,15 @@ export function HowItWorksSection() {
           ))}
         </div>
 
-        {/* Assembly video section */}
+        {/* Services list */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
           <AnimateIn delay={0.3}>
-            <VideoPlayer />
-          </AnimateIn>
-          <AnimateIn delay={0.4}>
-            <div className="lg:pl-4">
-              <p className="text-[10px] font-bold text-electric uppercase tracking-[0.3em] mb-4">
-                Assembleia real gravada
-              </p>
-              <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white leading-tight mb-4">
-                {"Isso não é propaganda. "}
-                <span className="text-gradient-gold italic">{"É real."}</span>
-              </h3>
-              <p className="text-white/35 text-sm leading-relaxed mb-6">
-                Nesses clipes você acompanha momentos reais de uma assembleia
-                onde participantes são contemplados por sorteio manual. Cada
-                pedra-chave é sorteada na frente de todos — transparência total.
+            <div className="rounded-2xl border border-white/[0.06] p-8 lg:p-10">
+              <p className="text-[10px] font-bold text-electric uppercase tracking-[0.3em] mb-6">
+                O que entregamos
               </p>
               <ul className="space-y-3">
-                {[
-                  "Sorteio manual feito ao vivo na assembleia",
-                  "Todos os participantes podem acompanhar",
-                  "Contemplação acontece na hora, sem truques",
-                  "Gravações públicas para total transparência",
-                ].map((item) => (
+                {services.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
                     <span className="text-white/40 text-sm">{item}</span>
@@ -108,17 +98,30 @@ export function HowItWorksSection() {
               </ul>
             </div>
           </AnimateIn>
-        </div>
 
-        <AnimateIn delay={0.5} className="flex justify-center">
-          <a
-            href="/como-funciona"
-            className="inline-flex items-center gap-2 border border-white/[0.1] px-8 py-4 rounded-full text-sm font-medium text-white/50 hover:text-white hover:border-white/30 transition-all duration-300 cursor-pointer uppercase tracking-wider"
-          >
-            Ver guia completo
-            <ArrowRight size={14} />
-          </a>
-        </AnimateIn>
+          <AnimateIn delay={0.4}>
+            <div className="lg:pl-4">
+              <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white leading-tight mb-4">
+                {"Seu negócio completo "}
+                <span className="text-gradient-gold italic">no digital.</span>
+              </h3>
+              <p className="text-white/35 text-sm leading-relaxed mb-6">
+                Desde o e-mail profissional até o funil de vendas — montamos
+                tudo o que você precisa para parecer profissional e atrair
+                clientes reais, independente do seu nicho ou tamanho.
+              </p>
+              <a
+                href="https://wa.me/17169399340"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity cursor-pointer"
+              >
+                Quero meu diagnóstico gratuito
+                <ArrowRight size={14} />
+              </a>
+            </div>
+          </AnimateIn>
+        </div>
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ export function CTASection() {
       <div className="absolute inset-0">
         <Image
           src="/images/avatar-closeup.jpg"
-          alt="Consultora O Seu Plano"
+          alt="Especialista O Seu Plano"
           fill
           className="object-cover object-top"
         />
@@ -22,12 +22,13 @@ export function CTASection() {
       <div className="relative z-10 max-w-[900px] mx-auto px-6 lg:px-12 text-center">
         <AnimateIn>
           <h2 className="font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-extrabold text-white leading-[0.95] mb-8">
-            Você pode muito mais do que o sistema te fez{" "}
-            <span className="text-gradient-gold italic">acreditar.</span>
+            Seu negócio merece{" "}
+            <span className="text-gradient-gold italic">aparecer</span>
+            {" "}como o profissional que você é.
           </h2>
           <p className="text-white/35 text-base lg:text-lg leading-relaxed max-w-xl mx-auto mb-12">
-            Não deixe que a desinformação te custe mais décadas de parcelas
-            desnecessárias. Converse com quem quer te ajudar a entender o jogo.
+            Não perca mais clientes por parecer amador no digital. Em menos
+            de uma semana, sua empresa tem a presença que merece.
           </p>
         </AnimateIn>
 
@@ -40,13 +41,13 @@ export function CTASection() {
               className="bg-gradient-gold text-deep px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity duration-200 cursor-pointer flex items-center gap-3"
             >
               <MessageCircle size={18} />
-              Mude sua história agora
+              Quero meu diagnóstico gratuito
             </a>
             <a
-              href="/contato"
+              href="/produtos"
               className="border border-white/[0.12] px-8 py-4 rounded-full text-sm font-medium text-white/50 hover:text-white hover:border-white/30 transition-all duration-300 cursor-pointer flex items-center gap-2 uppercase tracking-wider"
             >
-              Formulário de contato
+              Ver produtos
               <ArrowRight size={14} />
             </a>
           </div>
@@ -56,18 +57,18 @@ export function CTASection() {
         <AnimateIn delay={0.3}>
           <div className="flex flex-wrap items-center justify-center gap-10 text-white/20">
             <div className="text-center">
-              <p className="text-[10px] uppercase tracking-[0.2em]">Regulamentado</p>
-              <p className="font-heading font-semibold text-xs mt-1">Banco Central do Brasil</p>
+              <p className="text-[10px] uppercase tracking-[0.2em]">Qualquer</p>
+              <p className="font-heading font-semibold text-xs mt-1">Nicho ou Segmento</p>
             </div>
             <div className="w-px h-6 bg-white/[0.06]" />
             <div className="text-center">
-              <p className="text-[10px] uppercase tracking-[0.2em]">Associado</p>
-              <p className="font-heading font-semibold text-xs mt-1">ABAC</p>
+              <p className="text-[10px] uppercase tracking-[0.2em]">Resultado em</p>
+              <p className="font-heading font-semibold text-xs mt-1">Menos de 7 dias</p>
             </div>
             <div className="w-px h-6 bg-white/[0.06]" />
             <div className="text-center">
-              <p className="text-[10px] uppercase tracking-[0.2em]">Certificado</p>
-              <p className="font-heading font-semibold text-xs mt-1">MESC 100 Melhores 2025</p>
+              <p className="text-[10px] uppercase tracking-[0.2em]">Sem precisar de</p>
+              <p className="font-heading font-semibold text-xs mt-1">Conhecimento Técnico</p>
             </div>
           </div>
         </AnimateIn>

@@ -6,7 +6,7 @@ import { posts } from "@/app/blog/posts";
 const categoryDot: Record<string, string> = {
   Alerta: "bg-red-400",
   "Educação": "bg-electric",
-  "Investimento": "bg-green-400",
+  "Estratégia": "bg-green-400",
   "Educação Financeira": "bg-bronze",
   Guia: "bg-purple-400",
 };
