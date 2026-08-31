@@ -5,6 +5,31 @@ import { BookOpen, Zap, Star, ArrowRight, Download, ShoppingCart } from "lucide-
 
 const products = [
   {
+    id: "ebook-empreendedor",
+    badge: "NOVO · GRATUITO",
+    badgeColor: "bg-electric/10 text-electric border-electric/20",
+    icon: BookOpen,
+    title: "7 Coisas que Ninguém Conta para o Pequeno Empreendedor",
+    subtitle: "E-book gratuito — gestão, jurídico e finanças",
+    description:
+      "Do contador ao advogado, do fluxo de caixa à nota fiscal — o que todo dono de negócio precisa saber antes de aprender sobre marketing.",
+    features: [
+      "Por que a escolha do contador pode determinar o tempo de vida da sua empresa",
+      "Por que ter um advogado que oriente pode te livrar de vários problemas sérios",
+      "MEI ou ME? Como escolher o regime tributário certo e pagar menos imposto",
+      "Como emitir nota fiscal sem complicação: o básico que ninguém ensina",
+      "Fluxo de caixa para quem não estudou finanças: 15 min por dia já resolve",
+      "Pessoa física vs. pessoa jurídica: como separar e proteger seu patrimônio",
+      "O que o CNPJ desbloqueia: crédito, licitação e credibilidade que você ainda não tem",
+    ],
+    price: "Grátis",
+    priceNote: "Baixe agora sem compromisso",
+    cta: "Baixar grátis",
+    hotmartUrl: "/obrigado",
+    isExternal: false,
+    highlight: false,
+  },
+  {
     id: "ebook-gratuito",
     badge: "GRATUITO",
     badgeColor: "bg-electric/10 text-electric border-electric/20",
@@ -98,7 +123,7 @@ export function ProdutosContent() {
 
       {/* Products grid */}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {products.map((product, i) => {
             const Icon = product.icon;
             return (

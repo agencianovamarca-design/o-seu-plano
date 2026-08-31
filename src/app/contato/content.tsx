@@ -89,14 +89,12 @@ export function ContatoPageContent() {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-light mb-1">
-                    Telefone
+                    Diagnóstico gratuito
                   </h3>
-                  <a
-                    href="tel:+17169399340"
-                    className="text-muted text-sm hover:text-light transition-colors"
-                  >
-                    +1 (716) 939-9340
-                  </a>
+                  <p className="text-muted text-sm">
+                    Análise da sua presença digital
+                  </p>
+                  <p className="text-electric text-xs mt-1">Sem custo, sem pressão</p>
                 </div>
               </div>
             </AnimateIn>
@@ -217,14 +215,23 @@ export function ContatoPageContent() {
                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-light focus:outline-none focus:border-gold/30 transition-colors cursor-pointer"
                       >
                         <option value="" className="bg-surface">Selecione</option>
-                        <option value="Simulação de consórcio" className="bg-surface">
-                          Simulação de consórcio
+                        <option value="Diagnóstico gratuito da minha presença digital" className="bg-surface">
+                          Diagnóstico gratuito
                         </option>
-                        <option value="Dúvidas sobre consórcio" className="bg-surface">
-                          Dúvidas sobre consórcio
+                        <option value="Quero montar minha presença digital do zero" className="bg-surface">
+                          Presença digital do zero
                         </option>
-                        <option value="Investimento com consórcio" className="bg-surface">
-                          Investimento com consórcio
+                        <option value="Quero e-mail no meu domínio" className="bg-surface">
+                          E-mail profissional
+                        </option>
+                        <option value="Site ou landing page para meu negócio" className="bg-surface">
+                          Site / landing page
+                        </option>
+                        <option value="Gerenciamento de redes sociais" className="bg-surface">
+                          Redes sociais
+                        </option>
+                        <option value="Mentoria estratégica individual" className="bg-surface">
+                          Mentoria estratégica
                         </option>
                         <option value="Parceria comercial" className="bg-surface">
                           Parceria comercial
