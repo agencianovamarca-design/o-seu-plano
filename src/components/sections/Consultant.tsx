@@ -13,8 +13,8 @@ export function ConsultantSection() {
           {/* Image */}
           <div className="relative min-h-[500px] lg:min-h-[650px]">
             <Image
-              src="/images/avatar-desk.jpg"
-              alt="Consultora O Seu Plano — Análise Estratégica"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+              alt="Especialista em estratégia digital — O Seu Plano"
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"

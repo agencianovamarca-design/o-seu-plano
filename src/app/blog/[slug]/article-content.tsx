@@ -98,7 +98,12 @@ export function ArticleContent({
               )}
               <div className="text-white/40 text-base leading-relaxed space-y-4">
                 {section.body.split("\n\n").map((p, j) => (
-                  <p key={j}>{p}</p>
+                  <p
+                    key={j}
+                    dangerouslySetInnerHTML={{
+                      __html: p.replace(/\*\*(.+?)\*\*/g, "<strong class=\"text-white/70\">$1</strong>"),
+                    }}
+                  />
                 ))}
               </div>
             </section>
@@ -109,18 +114,17 @@ export function ArticleContent({
         <AnimateIn>
           <div className="mt-16 p-8 rounded-2xl bg-gold/[0.04] border border-gold/[0.12] text-center">
             <h3 className="font-heading text-xl font-bold text-white mb-3">
-              Quer ver esses números na prática?
+              Pronto para estruturar sua presença digital?
             </h3>
             <p className="text-white/30 text-sm mb-6 max-w-md mx-auto">
-              Use nosso simulador e descubra quanto você pode economizar com o
-              consórcio.
+              Faça o diagnóstico gratuito e descubra o que está impedindo sua empresa de atrair clientes no digital.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/simulador"
+                href="/diagnostico"
                 className="bg-gradient-gold text-deep px-7 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
               >
-                Simular agora
+                Diagnóstico gratuito
               </Link>
               <a
                 href="https://wa.me/17169399340"
