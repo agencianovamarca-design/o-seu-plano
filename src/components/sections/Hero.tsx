@@ -72,9 +72,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row items-start gap-4 mb-16"
         >
           <a
-            href="https://wa.me/17169399340"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/diagnostico"
             className="bg-gradient-gold text-deep px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity duration-200 cursor-pointer"
           >
             Quero meu diagnóstico gratuito
