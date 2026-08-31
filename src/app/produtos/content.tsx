@@ -25,7 +25,7 @@ const products = [
     price: "Grátis",
     priceNote: "Baixe agora sem compromisso",
     cta: "Baixar grátis",
-    hotmartUrl: "/obrigado",
+    hotmartUrl: "/downloads/ebook-empreendedor-brasileiro.pdf",
     isExternal: false,
     highlight: false,
   },
@@ -220,6 +220,7 @@ export function ProdutosContent() {
                         href={product.hotmartUrl}
                         target={product.isExternal ? "_blank" : "_self"}
                         rel={product.isExternal ? "noopener noreferrer" : undefined}
+                        download={product.hotmartUrl.endsWith(".pdf") ? true : undefined}
                         className={`w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-200 ${
                           product.highlight
                             ? "bg-gradient-gold text-deep hover:opacity-90"

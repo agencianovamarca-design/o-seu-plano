@@ -17,8 +17,8 @@ export function LeadCaptureSection() {
     saveLead({ nome: name, whatsapp, origem: "E-book" });
 
     const link = document.createElement("a");
-    link.href = "/downloads/ebook-o-seu-plano.pdf";
-    link.download = "O-Seu-Plano-Ebook.pdf";
+    link.href = "/downloads/ebook-empreendedor-brasileiro.pdf";
+    link.download = "7-Coisas-que-Ninguem-Conta-para-o-Pequeno-Empreendedor.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -48,20 +48,19 @@ export function LeadCaptureSection() {
                 <h2 className="font-heading text-2xl lg:text-3xl font-extrabold text-white leading-tight mb-4">
                   E-book grátis:{" "}
                   <span className="text-gradient-gold">
-                    7 Erros que Fazem Sua Empresa Perder Clientes Online
+                    7 Coisas que Ninguém Conta para o Pequeno Empreendedor
                   </span>
                 </h2>
                 <p className="text-white/35 text-sm leading-relaxed mb-6">
-                  Um guia direto ao ponto sobre os erros mais comuns que fazem
-                  empresas e profissionais perderem credibilidade — e clientes —
-                  antes mesmo de abrir a boca.
+                  Do contador ao advogado, do fluxo de caixa à nota fiscal —
+                  o que todo dono de negócio precisa saber antes de investir em marketing.
                 </p>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Por que @gmail.com custa clientes todos os dias",
-                    "O que um Instagram desatualizado comunica ao mercado",
-                    "Como a falta de site faz você perder para a concorrência",
-                    "Checklist: sua empresa está pronta para o digital?",
+                    "Por que a escolha do contador pode determinar o tempo de vida da empresa",
+                    "Por que um advogado que orienta te livra de problemas sérios",
+                    "MEI ou ME? Como escolher o regime tributário e pagar menos imposto",
+                    "Fluxo de caixa em 15 min por dia: o controle que salva o negócio",
                   ].map((item) => (
                     <li
                       key={item}
@@ -148,8 +147,8 @@ export function LeadCaptureSection() {
                       Se não iniciou automaticamente, clique abaixo:
                     </p>
                     <a
-                      href="/downloads/ebook-o-seu-plano.pdf"
-                      download="O-Seu-Plano-Ebook.pdf"
+                      href="/downloads/ebook-empreendedor-brasileiro.pdf"
+                      download="7-Coisas-que-Ninguem-Conta-para-o-Pequeno-Empreendedor.pdf"
                       className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-6 py-3 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer"
                     >
                       <ArrowRight size={14} />
