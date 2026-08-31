@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
-import { ArrowLeft, Clock, Share2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Share2 } from "lucide-react";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 type Section = { heading: string; body: string };
@@ -109,6 +109,35 @@ export function ArticleContent({
             </section>
           </AnimateIn>
         ))}
+
+        {/* Hostinger referral — shows on email article */}
+        {post.slug === "email-profissional-vs-gmail" && (
+          <AnimateIn>
+            <div className="mt-10 rounded-2xl border border-[#673DE6]/20 bg-[#673DE6]/[0.04] p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <div className="w-11 h-11 rounded-xl bg-[#673DE6]/15 border border-[#673DE6]/25 flex items-center justify-center shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9B6DFF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-semibold text-[#9B6DFF] uppercase tracking-wider mb-1">Ferramenta recomendada · Hostinger</p>
+                <p className="text-white/50 text-sm leading-relaxed">
+                  Registre seu domínio .com.br e tenha e-mail profissional ainda hoje — a partir de R$ 39,99/ano.
+                </p>
+              </div>
+              <a
+                href="https://www.hostinger.com/br?REFERRALCODE=QGHAGENCI29Y"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 inline-flex items-center gap-2 bg-[#673DE6] hover:bg-[#7B52E8] text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-colors duration-200 whitespace-nowrap"
+              >
+                Registrar domínio
+                <ArrowRight size={12} />
+              </a>
+            </div>
+          </AnimateIn>
+        )}
 
         {/* CTA */}
         <AnimateIn>

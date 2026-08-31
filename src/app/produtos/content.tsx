@@ -217,9 +217,69 @@ export function ProdutosContent() {
           })}
         </div>
 
+        {/* Hostinger Partner Block */}
+        <AnimateIn>
+          <div className="mt-16 rounded-3xl border border-white/[0.06] bg-white/[0.01] overflow-hidden">
+            <div className="px-8 py-6 border-b border-white/[0.06] flex items-center gap-3">
+              <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/20">
+                Ferramenta Recomendada
+              </span>
+              <div className="h-px flex-1 bg-white/[0.04]" />
+              <span className="text-[10px] font-semibold text-gold/60 uppercase tracking-wider">
+                Link de parceiro
+              </span>
+            </div>
+
+            <div className="p-8 lg:p-10 flex flex-col lg:flex-row items-start lg:items-center gap-8">
+              {/* Icon */}
+              <div className="w-16 h-16 rounded-2xl bg-[#673DE6]/10 border border-[#673DE6]/20 flex items-center justify-center shrink-0">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 8h20v16H6z" fill="#673DE6" opacity="0.15" rx="2"/>
+                  <path d="M6 10a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V10z" stroke="#673DE6" strokeWidth="1.5"/>
+                  <path d="M11 14v4M11 14l5 2.5L21 14M21 14v4" stroke="#9B6DFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+
+              {/* Text */}
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="font-heading font-bold text-white text-xl">
+                    Hostinger
+                  </h3>
+                  <span className="text-[10px] font-semibold text-[#9B6DFF] uppercase tracking-wider bg-[#673DE6]/10 border border-[#673DE6]/20 px-2.5 py-1 rounded-full">
+                    Parceiro Oficial
+                  </span>
+                </div>
+                <p className="text-white/40 text-sm leading-relaxed max-w-xl">
+                  Registre o domínio do seu negócio e contrate hospedagem profissional — a base de qualquer presença digital séria. Domínios .com.br a partir de <span className="text-white/60 font-semibold">R$ 39,99/ano</span>, hospedagem a partir de <span className="text-white/60 font-semibold">R$ 7,99/mês</span>.
+                </p>
+                <p className="text-white/20 text-xs mt-2">
+                  Ao usar nosso link, você paga o mesmo preço e apoia o O Seu Plano. Obrigado. 🙏
+                </p>
+              </div>
+
+              {/* CTA */}
+              <div className="shrink-0">
+                <a
+                  href="https://www.hostinger.com/br?REFERRALCODE=QGHAGENCI29Y"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#673DE6] hover:bg-[#7B52E8] text-white px-7 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                  </svg>
+                  Registrar domínio
+                </a>
+              </div>
+            </div>
+          </div>
+        </AnimateIn>
+
         {/* Bottom note */}
         <AnimateIn>
-          <div className="mt-16 text-center">
+          <div className="mt-10 text-center">
             <p className="text-white/20 text-sm">
               Pagamentos processados com segurança pela{" "}
               <span className="text-white/40 font-semibold">Hotmart</span>.
