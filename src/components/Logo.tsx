@@ -1,58 +1,93 @@
 "use client";
 
 export function Logo({ iconSize = 36 }: { iconSize?: number }) {
-  const gap = Math.round(iconSize * 0.09);
-  const cell = Math.round((iconSize - gap * 2) / 3);
+  // 4 ascending bars: heights 30%, 50%, 72%, 100% of iconSize
+  const barHeightRatios = [0.3, 0.52, 0.74, 1.0];
+  const gap = Math.round(iconSize * 0.14);
+  const barW = Math.round((iconSize - 3 * gap) / 4);
+  const svgW = 4 * barW + 3 * gap;
+  const rx = Math.round(barW * 0.28);
 
-  const cx = (col: number) => col * (cell + gap);
-  const cy = (row: number) => row * (cell + gap);
-
-  const titleSize = Math.round(iconSize * 0.52);
-  const subSize = Math.round(iconSize * 0.23);
-  const textGap = Math.round(iconSize * 0.12);
-  const marginLeft = Math.round(iconSize * 0.36);
+  const titleSize = Math.round(iconSize * 0.5);
+  const subSize = Math.round(iconSize * 0.21);
+  const iconGap = Math.round(iconSize * 0.38);
+  const subtitleTop = Math.round(iconSize * 0.07);
 
   return (
-    <span className="inline-flex items-center" style={{ gap: marginLeft }}>
-      {/* Icon mark — 3×3 pixel grid, diagonal ascendente */}
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: iconGap,
+        userSelect: "none",
+      }}
+    >
+      {/* Icon: 4 ascending gold bars */}
       <svg
-        width={iconSize}
+        width={svgW}
         height={iconSize}
-        viewBox={`0 0 ${iconSize} ${iconSize}`}
+        viewBox={`0 0 ${svgW} ${iconSize}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        style={{ flexShrink: 0, display: "block" }}
         aria-hidden="true"
-        style={{ flexShrink: 0 }}
       >
-        {/* Linha 0 (topo): dim dim GOLD */}
-        <rect x={cx(0)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
-        <rect x={cx(1)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
-        <rect x={cx(2)} y={cy(0)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
-
-        {/* Linha 1 (centro): dim GOLD dim */}
-        <rect x={cx(0)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
-        <rect x={cx(1)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
-        <rect x={cx(2)} y={cy(1)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
-
-        {/* Linha 2 (base): GOLD dim dim */}
-        <rect x={cx(0)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="#D4A843" />
-        <rect x={cx(1)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
-        <rect x={cx(2)} y={cy(2)} width={cell} height={cell} rx={Math.max(2, Math.round(cell * 0.22))} fill="white" fillOpacity="0.12" />
+        {barHeightRatios.map((ratio, i) => {
+          const barH = Math.round(iconSize * ratio);
+          const x = i * (barW + gap);
+          const y = iconSize - barH;
+          return (
+            <rect
+              key={i}
+              x={x}
+              y={y}
+              width={barW}
+              height={barH}
+              rx={rx}
+              ry={rx}
+              fill="#FFA300"
+            />
+          );
+        })}
+        {/* Accent dot on top of tallest bar */}
+        <circle
+          cx={3 * (barW + gap) + barW / 2}
+          cy={Math.round(iconSize * 0.06)}
+          r={Math.max(2, Math.round(barW * 0.22))}
+          fill="#FFD080"
+        />
       </svg>
 
       {/* Wordmark */}
-      <span className="flex flex-col leading-none">
+      <span style={{ display: "flex", flexDirection: "column" }}>
         <span
-          className="font-heading font-extrabold text-white tracking-tight"
-          style={{ fontSize: titleSize }}
+          style={{
+            display: "block",
+            fontFamily: "var(--font-heading, 'Montserrat', sans-serif)",
+            fontSize: titleSize,
+            fontWeight: 800,
+            letterSpacing: "0.05em",
+            color: "#F3F4F6",
+            lineHeight: 1,
+            whiteSpace: "nowrap",
+          }}
         >
           O SEU PLANO
         </span>
         <span
-          className="font-heading font-semibold text-gold tracking-[0.18em] uppercase"
-          style={{ fontSize: subSize, marginTop: textGap }}
+          style={{
+            display: "block",
+            fontFamily: "var(--font-heading, 'Montserrat', sans-serif)",
+            fontSize: subSize,
+            fontWeight: 600,
+            letterSpacing: "0.2em",
+            color: "#FFA300",
+            lineHeight: 1,
+            marginTop: subtitleTop,
+            whiteSpace: "nowrap",
+          }}
         >
-          Estratégia Digital
+          ESTRATÉGIA DIGITAL
         </span>
       </span>
     </span>

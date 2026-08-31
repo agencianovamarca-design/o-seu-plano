@@ -38,17 +38,17 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.4 }}
-          className="font-heading font-extrabold leading-[0.9] tracking-tight mb-8"
+          className="font-heading font-extrabold tracking-tight mb-8"
         >
-          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] text-white">
+          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] text-white leading-[0.92]">
             Sua empresa perde
           </span>
-          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] text-white">
+          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] text-white leading-[0.92]">
             clientes antes de{" "}
             <span className="text-gradient-gold italic">abrir</span>
           </span>
-          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] text-gradient-gold italic">
-            a boca.
+          <span className="block text-[clamp(2.8rem,7.5vw,7rem)] leading-[1.05]">
+            <span className="text-gradient-gold italic">a boca.</span>
           </span>
         </motion.h1>
 
