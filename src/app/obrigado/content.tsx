@@ -1,20 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
 import { AnimateIn } from "@/components/AnimateIn";
 import { Download, ArrowRight, CheckCircle } from "lucide-react";
 
 export function ObrigadoContent() {
-  useEffect(() => {
-    const link = document.createElement("a");
-    link.href = "/downloads/ebook-o-seu-plano.pdf";
-    link.download = "O-Seu-Plano-Ebook.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }, []);
-
   return (
     <div className="pt-36 pb-24">
       <section className="max-w-2xl mx-auto px-6 text-center">
@@ -25,14 +15,14 @@ export function ObrigadoContent() {
           </h1>
           <p className="text-white/40 text-lg mb-10">
             Seu e-book está pronto. Clique no botão abaixo para baixar
-            e comece a entender o jogo antes de entrar.
+            e descubra os 7 erros que fazem empresas perderem clientes antes mesmo da primeira conversa.
           </p>
         </AnimateIn>
 
         <AnimateIn delay={0.15}>
           <a
-            href="/downloads/ebook-o-seu-plano.pdf"
-            download
+            href="/downloads/ebook-7erros-clientes.pdf"
+            download="7-Erros-Perder-Clientes-Online.pdf"
             className="inline-flex items-center gap-3 bg-gradient-gold text-deep px-10 py-5 rounded-full text-base font-bold uppercase tracking-wider hover:opacity-90 transition-opacity cursor-pointer mb-12"
           >
             <Download size={22} />
@@ -47,14 +37,14 @@ export function ObrigadoContent() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
-                href="/simulador"
+                href="/produtos"
                 className="flex items-center justify-center gap-2 p-4 rounded-xl border border-white/[0.06] text-white/50 hover:text-gold hover:border-gold/20 transition-all text-sm font-medium"
               >
-                Simular seu consórcio
+                Ver todos os materiais
                 <ArrowRight size={14} />
               </Link>
               <a
-                href="https://wa.me/17169399340?text=Ol%C3%A1!%20Baixei%20o%20e-book%20e%20gostaria%20de%20saber%20mais."
+                href="https://wa.me/5519997485834?text=Ol%C3%A1!%20Baixei%20o%20e-book%20e%20gostaria%20de%20saber%20mais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 p-4 rounded-xl bg-[#25D366]/10 border border-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/20 transition-all text-sm font-medium"

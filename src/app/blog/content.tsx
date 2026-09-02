@@ -29,7 +29,7 @@ export function BlogPageContent() {
           </h1>
           <p className="max-w-2xl mx-auto text-muted text-lg">
             Conteúdo que o mercado não quer que você veja. Artigos educativos
-            sobre consórcio, finanças e investimento.
+            sobre presença digital, empreendedorismo e estratégia.
           </p>
         </AnimateIn>
 

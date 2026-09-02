@@ -1,4 +1,4 @@
-import Link from "next/link";
+?import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { Logo } from "@/components/Logo";
@@ -104,7 +104,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://wa.me/17169399340"
+                  href="https://wa.me/5519997485834"
                   className="flex items-center gap-3 text-white/25 text-sm hover:text-white/60 transition-colors duration-200"
                 >
                   <Phone size={14} className="text-electric shrink-0" />
@@ -130,7 +130,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} O Seu Plano. Todos os direitos reservados.
           </p>
           <a
-            href="https://wa.me/17169399340"
+            href="https://wa.me/5519997485834"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full text-xs font-semibold hover:bg-[#20BD5A] transition-colors duration-200 cursor-pointer"
@@ -145,3 +145,4 @@ export function Footer() {
     </footer>
   );
 }
+

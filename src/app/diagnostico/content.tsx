@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -77,7 +77,7 @@ function CheckCard({ value, label, selected, onToggle }: { value: string; label:
         <span className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 transition-all duration-200 ${
           selected ? "border-electric bg-electric/20" : "border-white/20"
         }`}>
-          {selected && <span className="text-electric text-[10px] font-bold leading-none">✓</span>}
+          {selected && <span className="text-electric text-[10px] font-bold leading-none">�??</span>}
         </span>
         {label}
       </span>
@@ -165,26 +165,26 @@ export function DiagnosticoContent() {
 
     const dores = data.dores.length ? data.dores.join(", ") : "Não informado";
     const msg =
-`🧩 *Diagnóstico Digital — O Seu Plano*
+`�?�� *Diagnóstico Digital �?? O Seu Plano*
 
-👤 *${data.nome}*
-📱 WhatsApp: ${data.wa}
-🏢 Nicho: ${data.nicho}
-📍 Cidade: ${data.cidade || "—"}
+�??� *${data.nome}*
+�??� WhatsApp: ${data.wa}
+�?�� Nicho: ${data.nicho}
+�??� Cidade: ${data.cidade || "�??"}
 
 *Situação atual:*
-• E-mail: ${data.email || "—"}
-• Redes sociais: ${data.redes || "—"}
-• Site: ${data.site || "—"}
-• Google Maps: ${data.gmn || "—"}
+�?� E-mail: ${data.email || "�??"}
+�?� Redes sociais: ${data.redes || "�??"}
+�?� Site: ${data.site || "�??"}
+�?� Google Maps: ${data.gmn || "�??"}
 
 *Objetivos:*
-• Dores: ${dores}
-• Urgência: ${data.urgencia || "—"}
-• Budget: ${data.budget || "—"}
-• Como chegou: ${data.origem || "—"}`;
+�?� Dores: ${dores}
+�?� Urgência: ${data.urgencia || "�??"}
+�?� Budget: ${data.budget || "�??"}
+�?� Como chegou: ${data.origem || "�??"}`;
 
-    window.open(`https://wa.me/17169399340?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/5519997485834?text=${encodeURIComponent(msg)}`, "_blank");
     setSubmitting(false);
     setSent(true);
   }
@@ -261,7 +261,7 @@ export function DiagnosticoContent() {
             </motion.div>
           ) : (
             <>
-              {/* Step 0 — Identificação */}
+              {/* Step 0 �?? Identificação */}
               {step === 0 && (
                 <motion.div key="s0" initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
                   <div className="space-y-5">
@@ -286,7 +286,7 @@ export function DiagnosticoContent() {
                 </motion.div>
               )}
 
-              {/* Step 1 — Situação atual */}
+              {/* Step 1 �?? Situação atual */}
               {step === 1 && (
                 <motion.div key="s1" initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
                   <div className="space-y-6">
@@ -322,7 +322,7 @@ export function DiagnosticoContent() {
                 </motion.div>
               )}
 
-              {/* Step 2 — Objetivos */}
+              {/* Step 2 �?? Objetivos */}
               {step === 2 && (
                 <motion.div key="s2" initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
                   <div className="space-y-6">
@@ -344,14 +344,14 @@ export function DiagnosticoContent() {
                     </Field>
                     <Field label="Qual a urgência?" error={errors.urgencia}>
                       <div className="grid grid-cols-2 gap-2 mt-1">
-                        {["Agora — preciso resolver isso", "Próximo mês", "Estou só explorando", "Depende do investimento"].map((v) => (
+                        {["Agora �?? preciso resolver isso", "Próximo mês", "Estou só explorando", "Depende do investimento"].map((v) => (
                           <RadioCard key={v} value={v} label={v} selected={data.urgencia === v} onSelect={() => set("urgencia", v)} />
                         ))}
                       </div>
                     </Field>
                     <Field label="Quanto pode investir por mês?" error={errors.budget}>
                       <div className="grid grid-cols-2 gap-2 mt-1">
-                        {["Até R$ 97 (kit digital)", "R$ 97 – 500 (serviço)", "Acima de R$ 500", "Quero a mentoria (R$ 197)"].map((v) => (
+                        {["Até R$ 97 (kit digital)", "R$ 97 �?? 500 (serviço)", "Acima de R$ 500", "Quero a mentoria (R$ 197)"].map((v) => (
                           <RadioCard key={v} value={v} label={v} selected={data.budget === v} onSelect={() => set("budget", v)} />
                         ))}
                       </div>
@@ -367,7 +367,7 @@ export function DiagnosticoContent() {
                 </motion.div>
               )}
 
-              {/* Step 3 — Revisão */}
+              {/* Step 3 �?? Revisão */}
               {step === 3 && (
                 <motion.div key="s3" initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
                   <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] overflow-hidden mb-6">
@@ -386,7 +386,7 @@ export function DiagnosticoContent() {
                           ["E-mail", data.email],
                           ["Redes sociais", data.redes],
                           ["Site", data.site],
-                          ["Google Maps", data.gmn || "—"],
+                          ["Google Maps", data.gmn || "�??"],
                         ].map(([k, v]) => (
                           <div key={k}>
                             <p className="text-white/25 text-xs">{k}</p>
@@ -403,7 +403,7 @@ export function DiagnosticoContent() {
                         {[
                           ["Urgência", data.urgencia],
                           ["Budget", data.budget],
-                          ["Origem", data.origem || "—"],
+                          ["Origem", data.origem || "�??"],
                         ].map(([k, v]) => (
                           <div key={k}>
                             <p className="text-white/25 text-xs">{k}</p>
@@ -425,7 +425,7 @@ export function DiagnosticoContent() {
                   </div>
 
                   <p className="text-white/20 text-xs text-center mb-4">
-                    Ao confirmar, o WhatsApp abrirá com esses dados já preenchidos — e a gente entra em contato com o plano de ação.
+                    Ao confirmar, o WhatsApp abrirá com esses dados já preenchidos �?? e a gente entra em contato com o plano de ação.
                   </p>
                 </motion.div>
               )}
@@ -441,7 +441,7 @@ export function DiagnosticoContent() {
                 onClick={back}
                 className="border border-white/[0.1] px-6 py-3 rounded-full text-sm font-medium text-white/40 hover:text-white/70 hover:border-white/20 transition-all duration-300 cursor-pointer"
               >
-                ← Voltar
+                �?� Voltar
               </button>
             )}
             {step < 3 ? (
@@ -470,3 +470,4 @@ export function DiagnosticoContent() {
     </div>
   );
 }
+

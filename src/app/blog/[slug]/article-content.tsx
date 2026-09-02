@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { ArrowLeft, ArrowRight, Clock, Share2 } from "lucide-react";
-import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 type Section = { heading: string; body: string };
 type Post = {
@@ -156,7 +155,7 @@ export function ArticleContent({
                 Diagnóstico gratuito
               </Link>
               <a
-                href="https://wa.me/17169399340"
+                href="https://wa.me/5519997485834"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-white/[0.12] px-7 py-3 rounded-full text-sm font-medium text-white/50 hover:text-white hover:border-white/30 transition-all uppercase tracking-wider"
@@ -164,13 +163,6 @@ export function ArticleContent({
                 Falar com especialista
               </a>
             </div>
-          </div>
-        </AnimateIn>
-
-        {/* Newsletter */}
-        <AnimateIn>
-          <div className="mt-8 p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
-            <NewsletterSignup />
           </div>
         </AnimateIn>
 

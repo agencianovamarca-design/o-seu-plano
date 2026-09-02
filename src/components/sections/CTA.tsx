@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
@@ -11,7 +11,7 @@ export function CTASection() {
       <div className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80"
-          alt="Escritório moderno — O Seu Plano estratégia digital"
+          alt="Escritório moderno �?? O Seu Plano estratégia digital"
           fill
           className="object-cover object-top"
         />
@@ -35,7 +35,7 @@ export function CTASection() {
         <AnimateIn delay={0.2}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="https://wa.me/17169399340"
+              href="https://wa.me/5519997485834"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-gold text-deep px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity duration-200 cursor-pointer flex items-center gap-3"
@@ -76,3 +76,4 @@ export function CTASection() {
     </section>
   );
 }
+

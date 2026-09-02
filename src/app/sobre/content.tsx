@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
@@ -20,16 +20,17 @@ export function AboutPageContent() {
               de entrar.
             </h1>
             <p className="text-muted text-lg leading-relaxed">
-              O Seu Plano nasceu de uma inconformidade: por que tantas pessoas
-              pagam três imóveis para morar em um? Por que o sistema financeiro
-              lucra com a desinformação? Decidimos mudar isso.
+              O Seu Plano nasceu de uma inconformidade: por que tantos
+              empreendedores brilhantes continuam invisíveis no digital? Por que
+              pequenos negócios perdem clientes todos os dias por não parecerem
+              profissionais? Decidimos mudar isso.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.2}>
             <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/[0.06]">
               <Image
                 src="/images/avatar-strategy.jpg"
-                alt="Consultora O Seu Plano — Inteligência Estratégica"
+                alt="Consultora O Seu Plano �?? Inteligência Estratégica"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -50,11 +51,10 @@ export function AboutPageContent() {
                 Nossa missão
               </h2>
               <p className="text-muted leading-relaxed">
-                Educar consumidores e transformar o mercado de aquisição de
-                bens móveis e imóveis de forma coesa e eficaz, gerando
-                segurança e confiabilidade. Queremos que cada pessoa entenda
-                suas opções antes de tomar a decisão que vai impactar as
-                próximas décadas da sua vida.
+                Empoderar empreendedores, MEIs e profissionais liberais com
+                presença digital profissional �?? de forma clara, acessível e
+                sem jargão técnico. Acreditamos que todo negócio honesto merece
+                ser encontrado e reconhecido no digital.
               </p>
             </div>
           </AnimateIn>
@@ -65,10 +65,10 @@ export function AboutPageContent() {
                 Nossa visão
               </h2>
               <p className="text-muted leading-relaxed">
-                Um Brasil onde ninguém paga juros abusivos por falta de
-                informação. Onde consórcio não é tabu, mas sim a escolha
-                inteligente. Onde profissionais do mercado estão comprometidos
-                com o plano do cliente, não com a própria comissão.
+                Um Brasil onde qualquer pequeno negócio consegue parecer
+                profissional no digital. Onde o empreendedor não perde clientes
+                por falta de e-mail no domínio, perfil no Google ou site �?? e
+                onde a estratégia digital é acessível, não elitizada.
               </p>
             </div>
           </AnimateIn>
@@ -134,29 +134,20 @@ export function AboutPageContent() {
         </div>
       </section>
 
-      {/* Why our partner */}
+      {/* Numbers */}
       <section className="max-w-4xl mx-auto px-6 mb-24">
         <AnimateIn>
           <div className="glass rounded-2xl p-10 lg:p-12 glow-gold">
             <h2 className="font-heading text-2xl font-bold text-light mb-6 text-center">
-              Por que escolhemos{" "}
-              <span className="text-gradient-gold">essa administradora</span>
+              Resultados que{" "}
+              <span className="text-gradient-gold">falam por si</span>
             </h2>
-            <p className="text-muted leading-relaxed text-center max-w-2xl mx-auto mb-10">
-              Pesquisamos todas as administradoras do mercado e escolhemos a que
-              mais se alinha com nossos valores de transparência, grupos menores
-              e chances reais para o cliente.
-            </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { value: 75, suffix: " anos", label: "de mercado sólido" },
-                {
-                  value: 2000,
-                  suffix: "",
-                  label: "máximo de participantes por grupo",
-                },
-                { value: 120, suffix: "", label: "menor grupo disponível" },
-                { value: 0, suffix: " juros", label: "apenas taxa admin" },
+                { value: 7, suffix: " dias", label: "para site no ar" },
+                { value: 24, suffix: "h", label: "e-mail profissional ativo" },
+                { value: 100, suffix: "%", label: "acesso total entregue a você" },
+                { value: 97, suffix: " R$", label: "para começar do zero" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-2xl font-bold text-gradient-gold font-heading">
@@ -182,7 +173,7 @@ export function AboutPageContent() {
             decisão.
           </p>
           <a
-            href="https://wa.me/17169399340"
+            href="https://wa.me/5519997485834"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-deep px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity duration-200 cursor-pointer"
@@ -194,3 +185,4 @@ export function AboutPageContent() {
     </div>
   );
 }
+

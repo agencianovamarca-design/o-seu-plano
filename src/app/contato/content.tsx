@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import { useState } from "react";
 import { AnimateIn } from "@/components/AnimateIn";
@@ -34,7 +34,7 @@ export function ContatoPageContent() {
     });
     const msg = `Olá! Me chamo ${form.name}.\n\nAssunto: ${form.subject}\n\n${form.message}\n\nMeu email: ${form.email}\nMeu telefone: ${form.phone}`;
     window.open(
-      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/5519997485834?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
     setSubmitted(true);
@@ -52,7 +52,7 @@ export function ContatoPageContent() {
             <span className="text-gradient-gold">entende o jogo.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-muted text-lg">
-            Tire suas dúvidas, peça uma simulação ou simplesmente converse com
+            Tire suas dúvidas, peça um diagnóstico ou simplesmente converse com
             a gente. Sem compromisso, sem pressão de vendas.
           </p>
         </AnimateIn>
@@ -62,7 +62,7 @@ export function ContatoPageContent() {
           <div className="space-y-6">
             <AnimateIn>
               <a
-                href="https://wa.me/17169399340"
+                href="https://wa.me/5519997485834"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-light rounded-2xl p-6 flex items-start gap-4 hover:border-green-400/20 transition-all duration-300 cursor-pointer block"
@@ -294,3 +294,4 @@ export function ContatoPageContent() {
     </div>
   );
 }
+

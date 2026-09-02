@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import { useState } from "react";
 import { AnimateIn } from "@/components/AnimateIn";
@@ -6,86 +6,82 @@ import { ChevronDown, MessageCircle } from "lucide-react";
 
 const faqCategories = [
   {
-    category: "Sobre Consórcio",
+    category: "Sobre Presença Digital",
     faqs: [
       {
-        q: "O que é consórcio?",
-        a: "Consórcio é uma modalidade de compra coletiva onde um grupo de pessoas contribui mensalmente para um fundo comum. Todo mês, um ou mais participantes são contemplados e recebem uma carta de crédito no valor integral para adquirir o bem desejado. Não há juros — apenas taxa de administração.",
+        q: "O que é presença digital, de verdade?",
+        a: "Presença digital é o conjunto de todos os canais onde a sua empresa pode ser encontrada online: e-mail profissional, perfil no Google (Google Meu Negócio), site, redes sociais e WhatsApp Business. Não é ter um canal �?? é ter todos conectados, funcionando e transmitindo profissionalismo.",
       },
       {
-        q: "Consórcio é regulamentado?",
-        a: "Sim. O consórcio é regulamentado e fiscalizado pelo Banco Central do Brasil. Nossa administradora parceira é associada à ABAC (Associação Brasileira de Administradoras de Consórcio) e opera dentro de todas as normas legais.",
+        q: "Por que @gmail.com afasta clientes?",
+        a: "Porque passa a mensagem de que o negócio não investiu nem R$ 30 no próprio domínio. Para quem está avaliando contratar um serviço ou comprar um produto, e-mail no domínio próprio (ex: contato@suaempresa.com.br) é um sinal de que a empresa é séria. Gmail diz 'informal'. Domínio próprio diz 'profissional'.",
       },
       {
-        q: "Consórcio é furada?",
-        a: "Não. O que é furada é pagar juros compostos de 8-12% ao ano durante 30 anos. O consórcio foi prejudicado pela imagem de empresas e vendedores desonestos, mas com uma administradora séria e profissionais comprometidos, o consórcio é uma das formas mais inteligentes de adquirir bens.",
+        q: "Meu negócio é pequeno. Vale a pena investir em presença digital?",
+        a: "Especialmente para negócios pequenos. Você não tem budget para outdoor ou televisão �?? mas pode ter um Google Meu Negócio impecável, um Instagram que converte e um site que funciona. O digital nivela o campo: o cliente não sabe o tamanho da empresa antes de contratar. O que ele vê é a aparência.",
       },
       {
-        q: "Qual a diferença entre consórcio e financiamento?",
-        a: "No financiamento: você recebe o bem imediatamente, mas paga juros compostos que podem mais que dobrar o valor total. No consórcio: você paga parcelas sem juros (apenas taxa de administração de ~15% diluída) e pode ser contemplado a qualquer momento por sorteio ou lance. Exemplo real: imóvel de R$ 300 mil custa ~R$ 720 mil no financiamento e ~R$ 345 mil no consórcio.",
-      },
-      {
-        q: "Posso usar consórcio como investimento?",
-        a: "Sim! Uma estratégia cada vez mais popular é adquirir imóveis via consórcio para Airbnb ou aluguel. O retorno mensal pode cobrir as parcelas do consórcio e ainda gerar renda passiva. É uma forma inteligente de construir patrimônio.",
+        q: "Qual é a diferença entre site e landing page?",
+        a: "Site é um destino completo: várias páginas, sobre a empresa, serviços, blog, contato. Landing page é uma página única focada em uma ação específica �?? geralmente capturar um lead ou vender um produto. Para quem está começando, uma landing page bem feita converte mais do que um site mal feito. Para quem já tem clientes, um site passa mais credibilidade.",
       },
     ],
   },
   {
-    category: "Sobre a administradora",
+    category: "Sobre nossos serviços",
     faqs: [
       {
-        q: "Por que essa administradora e não outra?",
-        a: "Três diferenciais: 1) Sorteio manual — chances reais de contemplação sem depender da loteria federal. 2) Grupos menores (120 a 2.000 participantes). 3) 75 anos de mercado, com solidez comprovada em todas as crises econômicas.",
+        q: "O que o O Seu Plano faz exatamente?",
+        a: "Estruturamos a presença digital de empresas, MEIs e profissionais liberais do zero ou reorganizamos o que já existe. Isso inclui: e-mail no domínio próprio, Google Meu Negócio, bio e perfil de redes sociais, site ou landing page, WhatsApp Business e roteiro de conteúdo para os primeiros 30 dias.",
       },
       {
-        q: "O que é sorteio manual?",
-        a: "O sorteio é feito manualmente nas assembleias — diferente de administradoras que usam a loteria federal, onde suas chances de contemplação são equivalentes a ganhar na mega-sena. No sorteio manual, com grupos menores, as chances são significativamente maiores.",
+        q: "Vocês gerenciam minhas redes sociais?",
+        a: "Dependendo do plano. Na entrega básica, estruturamos perfil, bio, destaques e template visual �?? e você ou sua equipe cria o conteúdo com o nosso roteiro. Para gestão ativa de redes sociais, temos planos mensais. Fale com a gente para entender o que faz mais sentido para o seu momento.",
       },
       {
-        q: "Qual o tamanho dos grupos?",
-        a: "Nossa administradora trabalha com grupos de de 999 (imóveis Faixa I) a 2.000 (autos Edição Especial) participantes. Mesmo nos maiores grupos, as chances de sorteio são reais — muito diferente de outras administradoras que operam com 5.000 a 10.000+ participantes.",
+        q: "Em quanto tempo fico com tudo pronto?",
+        a: "O e-mail profissional fica ativo em menos de 24 horas. Google Meu Negócio configurado em até 3 dias úteis. Site ou landing page em até 7 dias úteis após aprovação do briefing. O prazo total depende do escopo contratado e da sua disponibilidade para responder o briefing.",
       },
       {
-        q: "Preciso dar lance para ser contemplado?",
-        a: "Não. O sorteio acontece todo mês e é gratuito. O lance é uma opção para quem quer antecipar a contemplação, mas não é obrigatório. Muitos clientes são contemplados por sorteio nos primeiros meses.",
+        q: "Preciso saber de tecnologia para contratar?",
+        a: "Não. Cuidamos de tudo técnico. Você responde um formulário de briefing, aprova as entregas e recebe tudo pronto com acesso completo e guia de uso. A única coisa que pedimos é que você tenha as informações básicas sobre o seu negócio �?? o resto é com a gente.",
+      },
+      {
+        q: "O Seu Plano cobra taxa mensal?",
+        a: "Depende do serviço. A estruturação inicial (e-mail, Google, site) é cobrada uma única vez. Se você quiser gestão de redes sociais, atualizações de site ou mentoria contínua, existem planos mensais. Mas você nunca é obrigado a continuar �?? cada etapa é independente.",
       },
     ],
   },
   {
-    category: "Sobre O Seu Plano",
+    category: "E-mail profissional",
     faqs: [
       {
-        q: "O Seu Plano é uma administradora de consórcio?",
-        a: "Não. Somos um portal educativo e parceiro autorizado de uma das maiores administradoras do Brasil. Nossa missão é educar consumidores e ajudá-los a tomar decisões financeiras inteligentes.",
+        q: "O que eu preciso para ter e-mail no meu domínio?",
+        a: "Você precisa de um domínio registrado (ex: suaempresa.com.br) e de uma conta de e-mail corporativo (Google Workspace, Microsoft 365 ou Zoho Mail). O custo total fica entre R$ 30 e R$ 90 por mês, dependendo da ferramenta escolhida. A gente configura tudo para você.",
       },
       {
-        q: "Vocês cobram alguma taxa adicional?",
-        a: "Não. Você paga exatamente o mesmo que pagaria diretamente com a administradora. Nossa remuneração vem da administradora, não do cliente.",
+        q: "Posso manter meu @gmail.com e ter um e-mail profissional também?",
+        a: "Sim. Você pode configurar o e-mail profissional para encaminhar mensagens para o Gmail e responder como contato@suaempresa.com.br mesmo usando o app do Gmail. Assim você não perde nada e ainda parece profissional para o cliente.",
       },
       {
-        q: "Como posso falar com vocês?",
-        a: "Pelo WhatsApp +1 (716) 939-9340, pelo formulário de contato no site ou pelas redes sociais @seuplano.ofc. Estamos sempre disponíveis para tirar dúvidas — sem compromisso.",
+        q: "Qual serviço de e-mail corporativo vocês recomendam?",
+        a: "Para a maioria dos pequenos negócios, o Google Workspace (a partir de R$ 29/mês por usuário) é o mais indicado: você já conhece a interface do Gmail, integra com Drive e Calendar, e é confiável. Para quem precisa de solução gratuita, o Zoho Mail tem plano grátis para até 5 usuários com domínio próprio.",
       },
     ],
   },
   {
-    category: "Processo e Pagamento",
+    category: "Google Meu Negócio",
     faqs: [
       {
-        q: "Qual o valor mínimo de crédito?",
-        a: "Oferecemos cartas de crédito a partir de R$ 30 mil para veículos e valores maiores para imóveis. O plano ideal depende do seu objetivo e momento financeiro.",
+        q: "O que é o Google Meu Negócio e por que preciso?",
+        a: "�? o perfil da sua empresa no Google �?? o que aparece no Maps e nos resultados de busca quando alguém pesquisa pelo seu tipo de negócio na sua cidade. Gratuito e essencial: empresas com perfil completo recebem 70% mais visitas do que empresas sem perfil.",
       },
       {
-        q: "Preciso comprovar renda para entrar?",
-        a: "Para aderir ao grupo, não é necessária análise de crédito. A comprovação de renda é feita no momento da contemplação, quando você vai utilizar a carta de crédito.",
+        q: "Qualquer empresa pode ter Google Meu Negócio?",
+        a: "Sim. MEI, ME, empresa sem sede fixa, profissional autônomo �?? qualquer um pode criar um perfil. Para negócios que atendem no endereço do cliente (como jardinagem ou limpeza), é possível configurar como 'área de atendimento' sem mostrar endereço físico.",
       },
       {
-        q: "Posso quitar antecipadamente?",
-        a: "Sim. Você pode quitar as parcelas restantes a qualquer momento e, dependendo das regras do grupo, pode utilizar o saldo para ofertar lance ou antecipar a contemplação.",
-      },
-      {
-        q: "O que acontece se eu atrasar uma parcela?",
-        a: "Atrasos podem gerar multa e impedir sua participação nos sorteios daquele mês. O ideal é manter as parcelas em dia. Se estiver com dificuldades, entre em contato conosco que podemos orientar sobre as opções.",
+        q: "Como responder avaliações negativas?",
+        a: "Sempre responda �?? nunca ignore. Agradeça o feedback, reconheça o problema (mesmo que discorde do tom), e mostre o que foi feito ou ofereça resolver. Uma resposta profissional a uma avaliação ruim diz mais sobre a empresa do que a própria avaliação. Clientes futuros veem isso.",
       },
     ],
   },
@@ -156,7 +152,7 @@ export function FAQPageContent() {
         <AnimateIn delay={0.4} className="mt-12 text-center">
           <p className="text-muted mb-4">Não encontrou sua pergunta?</p>
           <a
-            href="https://wa.me/17169399340"
+            href="https://wa.me/5519997485834"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity duration-200 cursor-pointer"
@@ -169,3 +165,4 @@ export function FAQPageContent() {
     </div>
   );
 }
+

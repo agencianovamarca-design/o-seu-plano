@@ -7,25 +7,26 @@ import { saveLead } from "@/lib/save-lead";
 
 export function LeadCaptureSection() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !whatsapp) return;
+    if (!name || !email || !whatsapp) return;
 
-    saveLead({ nome: name, whatsapp, origem: "E-book" });
+    saveLead({ nome: name, email, whatsapp, origem: "E-book" });
 
     const link = document.createElement("a");
-    link.href = "/downloads/ebook-empreendedor-brasileiro.pdf";
-    link.download = "7-Coisas-que-Ninguem-Conta-para-o-Pequeno-Empreendedor.pdf";
+    link.href = "/downloads/ebook-7erros-clientes.pdf";
+    link.download = "7-Erros-Perder-Clientes-Online.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 
-    const msg = `Novo lead do e-book:\n• Nome: ${name}\n• WhatsApp: ${whatsapp}`;
+    const msg = `Novo lead do e-book:\n• Nome: ${name}\n• E-mail: ${email}\n• WhatsApp: ${whatsapp}`;
     window.open(
-      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/5519997485834?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
 
@@ -48,19 +49,19 @@ export function LeadCaptureSection() {
                 <h2 className="font-heading text-2xl lg:text-3xl font-extrabold text-white leading-tight mb-4">
                   E-book grátis:{" "}
                   <span className="text-gradient-gold">
-                    7 Coisas que Ninguém Conta para o Pequeno Empreendedor
+                    7 Erros que Fazem Sua Empresa Perder Clientes Online
                   </span>
                 </h2>
                 <p className="text-white/35 text-sm leading-relaxed mb-6">
-                  Do contador ao advogado, do fluxo de caixa à nota fiscal —
-                  o que todo dono de negócio precisa saber antes de investir em marketing.
+                  Descubra os erros que fazem empresas perderem clientes antes mesmo
+                  de ter a primeira conversa — e como corrigir cada um.
                 </p>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Por que a escolha do contador pode determinar o tempo de vida da empresa",
-                    "Por que um advogado que orienta te livra de problemas sérios",
-                    "MEI ou ME? Como escolher o regime tributário e pagar menos imposto",
-                    "Fluxo de caixa em 15 min por dia: o controle que salva o negócio",
+                    "Por que @gmail.com e @hotmail.com afastam clientes sérios",
+                    "O que uma bio ruim no Instagram comunica sobre seu negócio",
+                    "Como a falta de site faz você perder para a concorrência",
+                    "Checklist final: sua empresa está pronta para o digital?",
                   ].map((item) => (
                     <li
                       key={item}
@@ -85,11 +86,11 @@ export function LeadCaptureSection() {
             <div className="p-10 lg:p-14 bg-white/[0.01]">
               <AnimateIn delay={0.15}>
                 {!sent ? (
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form onSubmit={handleSubmit} className="space-y-4">
                     <h3 className="font-heading text-lg font-bold text-white mb-2">
                       Receba o e-book agora
                     </h3>
-                    <p className="text-white/25 text-sm mb-6">
+                    <p className="text-white/25 text-sm mb-5">
                       Preencha e o download começa automaticamente.
                     </p>
                     <div>
@@ -106,6 +107,23 @@ export function LeadCaptureSection() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Como podemos te chamar?"
+                        className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder:text-white/15 focus:outline-none focus:border-gold/30 transition-colors text-sm"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="lead-email"
+                        className="block text-xs text-white/25 uppercase tracking-wider mb-2"
+                      >
+                        Seu e-mail
+                      </label>
+                      <input
+                        id="lead-email"
+                        type="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="seu@email.com"
                         className="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3.5 text-white placeholder:text-white/15 focus:outline-none focus:border-gold/30 transition-colors text-sm"
                       />
                     </div>
@@ -147,8 +165,8 @@ export function LeadCaptureSection() {
                       Se não iniciou automaticamente, clique abaixo:
                     </p>
                     <a
-                      href="/downloads/ebook-empreendedor-brasileiro.pdf"
-                      download="7-Coisas-que-Ninguem-Conta-para-o-Pequeno-Empreendedor.pdf"
+                      href="/downloads/ebook-7erros-clientes.pdf"
+                      download="7-Erros-Perder-Clientes-Online.pdf"
                       className="inline-flex items-center gap-2 bg-gradient-gold text-deep px-6 py-3 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer"
                     >
                       <ArrowRight size={14} />

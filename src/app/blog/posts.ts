@@ -40,8 +40,8 @@ export const posts = [
       "Negócios com Google Meu Negócio bem configurado recebem 7x mais visitas. Veja como configurar, otimizar e se destacar na busca local — de graça.",
     readTime: "8 min",
     date: "2026-07-15",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    imageAlt: "Mapa digital com localização de negócio",
+    image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd",
+    imageAlt: "Celular com mapa e localização de negócio no Google Maps",
   },
   {
     slug: "leads-instagram-organico",

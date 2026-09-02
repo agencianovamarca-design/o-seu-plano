@@ -1,4 +1,4 @@
-"use client";
+?"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -151,9 +151,9 @@ export function SimulatorJourneySection() {
       assunto: profileLabel,
       mensagem: `Crédito: ${fmt(creditValue)} | Prazo: ${months}m | Parcela: ${fmt(consortiumMonthly)}/mês | Economia: ${fmt(savings)}`,
     });
-    const msg = `Olá! Sou ${name || "visitante do site"}.\n\nFiz a simulação no site:\n• Objetivo: ${profileLabel}\n• Crédito: ${fmt(creditValue)}\n• Prazo: ${months} meses\n• Parcela consórcio: ${fmt(consortiumMonthly)}/mês\n• Economia vs financiamento: ${fmt(savings)}\n\nGostaria de uma análise personalizada.`;
+    const msg = `Olá! Sou ${name || "visitante do site"}.\n\nFiz a simulação no site:\n�?� Objetivo: ${profileLabel}\n�?� Crédito: ${fmt(creditValue)}\n�?� Prazo: ${months} meses\n�?� Parcela consórcio: ${fmt(consortiumMonthly)}/mês\n�?� Economia vs financiamento: ${fmt(savings)}\n\nGostaria de uma análise personalizada.`;
     window.open(
-      `https://wa.me/17169399340?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/5519997485834?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
     setSent(true);
@@ -191,7 +191,7 @@ export function SimulatorJourneySection() {
         {/* Steps */}
         <div className="border border-white/[0.06] rounded-2xl overflow-hidden min-h-[480px]">
           <AnimatePresence mode="wait">
-            {/* STEP 0 — SITUAÇÃO */}
+            {/* STEP 0 �?? SITUA�?�?O */}
             {step === 0 && (
               <motion.div
                 key="situacao"
@@ -204,7 +204,7 @@ export function SimulatorJourneySection() {
                 <div className="flex items-center gap-3 mb-2">
                   <Target size={18} className="text-gold" />
                   <p className="text-[10px] text-gold uppercase tracking-[0.3em] font-bold">
-                    Etapa 1 — Situação
+                    Etapa 1 �?? Situação
                   </p>
                 </div>
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-3">
@@ -240,7 +240,7 @@ export function SimulatorJourneySection() {
               </motion.div>
             )}
 
-            {/* STEP 1 — IMAGINAÇÃO */}
+            {/* STEP 1 �?? IMAGINA�?�?O */}
             {step === 1 && (
               <motion.div
                 key="imaginacao"
@@ -253,7 +253,7 @@ export function SimulatorJourneySection() {
                 <div className="flex items-center gap-3 mb-2">
                   <Sparkles size={18} className="text-gold" />
                   <p className="text-[10px] text-gold uppercase tracking-[0.3em] font-bold">
-                    Etapa 2 — Imagine
+                    Etapa 2 �?? Imagine
                   </p>
                 </div>
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-3">
@@ -318,7 +318,7 @@ export function SimulatorJourneySection() {
                     <span className="text-gold font-bold text-lg">
                       {fmt(consortiumMonthly)}/mês
                     </span>{" "}
-                    — sem juros compostos, apenas taxa administrativa de{" "}
+                    �?? sem juros compostos, apenas taxa administrativa de{" "}
                     {(cat.adminRate * 100).toFixed(1)}% no total.
                   </p>
                 </div>
@@ -342,7 +342,7 @@ export function SimulatorJourneySection() {
               </motion.div>
             )}
 
-            {/* STEP 2 — CONSCIÊNCIA */}
+            {/* STEP 2 �?? CONSCI�?NCIA */}
             {step === 2 && (
               <motion.div
                 key="consciencia"
@@ -355,7 +355,7 @@ export function SimulatorJourneySection() {
                 <div className="flex items-center gap-3 mb-2">
                   <AlertTriangle size={18} className="text-red-400" />
                   <p className="text-[10px] text-red-400 uppercase tracking-[0.3em] font-bold">
-                    Etapa 3 — A verdade que ninguém te conta
+                    Etapa 3 �?? A verdade que ninguém te conta
                   </p>
                 </div>
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-3">
@@ -366,7 +366,7 @@ export function SimulatorJourneySection() {
                   <span className="text-red-400 font-bold">1,36% a.m.</span> (17,57% a.a.)
                   com CET real de{" "}
                   <span className="text-red-400 font-bold">22,46% a.a.</span>{" "}
-                  — fora as tarifas de avaliação (R$ 668) e cadastro (R$ 999).
+                  �?? fora as tarifas de avaliação (R$ 668) e cadastro (R$ 999).
                 </p>
                 <p className="text-white/20 text-xs mb-8 max-w-lg">
                   Valores reais praticados pelo mercado financeiro brasileiro.
@@ -469,7 +469,7 @@ export function SimulatorJourneySection() {
               </motion.div>
             )}
 
-            {/* STEP 3 — DESEJO */}
+            {/* STEP 3 �?? DESEJO */}
             {step === 3 && (
               <motion.div
                 key="desejo"
@@ -482,7 +482,7 @@ export function SimulatorJourneySection() {
                 <div className="flex items-center gap-3 mb-2">
                   <Sparkles size={18} className="text-gold" />
                   <p className="text-[10px] text-gold uppercase tracking-[0.3em] font-bold">
-                    Etapa 4 — O que isso significa pra você
+                    Etapa 4 �?? O que isso significa pra você
                   </p>
                 </div>
                 <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-8">
@@ -539,12 +539,12 @@ export function SimulatorJourneySection() {
                             {airbnbMonthly >= consortiumMonthly ? (
                               <span className="text-green-400">
                                 {" "}
-                                — cobre a parcela e ainda gera lucro!
+                                �?? cobre a parcela e ainda gera lucro!
                               </span>
                             ) : (
                               <span>
                                 {" "}
-                                — cobre parte significativa da parcela.
+                                �?? cobre parte significativa da parcela.
                               </span>
                             )}
                           </p>
@@ -598,7 +598,7 @@ export function SimulatorJourneySection() {
               </motion.div>
             )}
 
-            {/* STEP 4 — TRANSIÇÃO */}
+            {/* STEP 4 �?? TRANSI�?�?O */}
             {step === 4 && (
               <motion.div
                 key="transicao"
@@ -613,7 +613,7 @@ export function SimulatorJourneySection() {
                     <div className="flex items-center gap-3 mb-2">
                       <CheckCircle size={18} className="text-green-400" />
                       <p className="text-[10px] text-green-400 uppercase tracking-[0.3em] font-bold">
-                        Etapa final — Receba sua análise
+                        Etapa final �?? Receba sua análise
                       </p>
                     </div>
                     <h3 className="font-heading text-2xl lg:text-3xl font-bold text-white mb-3">
@@ -736,3 +736,4 @@ export function SimulatorJourneySection() {
     </section>
   );
 }
+

@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 
+const GOOGLE_SHEET_URL =
+  "https://script.google.com/macros/s/AKfycbwSWDV-rRQX3zoPTciJ86PmWBDezm3PQYbpjJmo8V2N8ULMH3NA3QsT4ECDbSfHGDA9/exec";
+
 export async function POST(req: Request) {
   try {
     const data = await req.json();
-    const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
+    const webhookUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL || GOOGLE_SHEET_URL;
 
     if (webhookUrl) {
       await fetch(webhookUrl, {

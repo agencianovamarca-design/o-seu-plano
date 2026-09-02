@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { HowItWorksPageContent } from "./content";
 
 export const metadata: Metadata = {
-  title: "Como Funciona o Consórcio | O Seu Plano",
+  title: "Como Funciona | O Seu Plano",
   description:
-    "Guia completo e didático sobre como funciona o consórcio. Entenda cada etapa: da adesão à contemplação, sem termos complicados.",
+    "Entenda como o O Seu Plano estrutura a presença digital da sua empresa — do e-mail profissional ao site, passo a passo e sem complicação.",
 };
 
 export default function ComoFuncionaPage() {

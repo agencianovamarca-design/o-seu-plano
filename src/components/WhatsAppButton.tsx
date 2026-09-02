@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 export function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/17169399340"
+      href="https://wa.me/5519997485834"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] text-white pl-4 pr-5 py-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer group"
@@ -24,3 +24,4 @@ export function WhatsAppButton() {
     </a>
   );
 }
+
