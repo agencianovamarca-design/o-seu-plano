@@ -1,4 +1,4 @@
-?"use client";
+"use client";
 
 import { AnimateIn } from "@/components/AnimateIn";
 import { Globe, DollarSign, TrendingUp, Shield, MapPin, ArrowRight } from "lucide-react";

@@ -1,4 +1,4 @@
-?"use client";
+"use client";
 
 import { AnimateIn } from "@/components/AnimateIn";
 import {
