@@ -10,7 +10,7 @@ const faqCategories = [
     faqs: [
       {
         q: "O que é presença digital, de verdade?",
-        a: "Presença digital é o conjunto de todos os canais onde a sua empresa pode ser encontrada online: e-mail profissional, perfil no Google (Google Meu Negócio), site, redes sociais e WhatsApp Business. Não é ter um canal �?? é ter todos conectados, funcionando e transmitindo profissionalismo.",
+        a: "Presença digital é o conjunto de todos os canais onde a sua empresa pode ser encontrada online: e-mail profissional, perfil no Google (Google Meu Negócio), site, redes sociais e WhatsApp Business. Não é ter um canal — é ter todos conectados, funcionando e transmitindo profissionalismo.",
       },
       {
         q: "Por que @gmail.com afasta clientes?",
@@ -18,11 +18,11 @@ const faqCategories = [
       },
       {
         q: "Meu negócio é pequeno. Vale a pena investir em presença digital?",
-        a: "Especialmente para negócios pequenos. Você não tem budget para outdoor ou televisão �?? mas pode ter um Google Meu Negócio impecável, um Instagram que converte e um site que funciona. O digital nivela o campo: o cliente não sabe o tamanho da empresa antes de contratar. O que ele vê é a aparência.",
+        a: "Especialmente para negócios pequenos. Você não tem budget para outdoor ou televisão — mas pode ter um Google Meu Negócio impecável, um Instagram que converte e um site que funciona. O digital nivela o campo: o cliente não sabe o tamanho da empresa antes de contratar. O que ele vê é a aparência.",
       },
       {
         q: "Qual é a diferença entre site e landing page?",
-        a: "Site é um destino completo: várias páginas, sobre a empresa, serviços, blog, contato. Landing page é uma página única focada em uma ação específica �?? geralmente capturar um lead ou vender um produto. Para quem está começando, uma landing page bem feita converte mais do que um site mal feito. Para quem já tem clientes, um site passa mais credibilidade.",
+        a: "Site é um destino completo: várias páginas, sobre a empresa, serviços, blog, contato. Landing page é uma página única focada em uma ação específica — geralmente capturar um lead ou vender um produto. Para quem está começando, uma landing page bem feita converte mais do que um site mal feito. Para quem já tem clientes, um site passa mais credibilidade.",
       },
     ],
   },
@@ -35,7 +35,7 @@ const faqCategories = [
       },
       {
         q: "Vocês gerenciam minhas redes sociais?",
-        a: "Dependendo do plano. Na entrega básica, estruturamos perfil, bio, destaques e template visual �?? e você ou sua equipe cria o conteúdo com o nosso roteiro. Para gestão ativa de redes sociais, temos planos mensais. Fale com a gente para entender o que faz mais sentido para o seu momento.",
+        a: "Dependendo do plano. Na entrega básica, estruturamos perfil, bio, destaques e template visual — e você ou sua equipe cria o conteúdo com o nosso roteiro. Para gestão ativa de redes sociais, temos planos mensais. Fale com a gente para entender o que faz mais sentido para o seu momento.",
       },
       {
         q: "Em quanto tempo fico com tudo pronto?",
@@ -43,11 +43,11 @@ const faqCategories = [
       },
       {
         q: "Preciso saber de tecnologia para contratar?",
-        a: "Não. Cuidamos de tudo técnico. Você responde um formulário de briefing, aprova as entregas e recebe tudo pronto com acesso completo e guia de uso. A única coisa que pedimos é que você tenha as informações básicas sobre o seu negócio �?? o resto é com a gente.",
+        a: "Não. Cuidamos de tudo técnico. Você responde um formulário de briefing, aprova as entregas e recebe tudo pronto com acesso completo e guia de uso. A única coisa que pedimos é que você tenha as informações básicas sobre o seu negócio — o resto é com a gente.",
       },
       {
         q: "O Seu Plano cobra taxa mensal?",
-        a: "Depende do serviço. A estruturação inicial (e-mail, Google, site) é cobrada uma única vez. Se você quiser gestão de redes sociais, atualizações de site ou mentoria contínua, existem planos mensais. Mas você nunca é obrigado a continuar �?? cada etapa é independente.",
+        a: "Depende do serviço. A estruturação inicial (e-mail, Google, site) é cobrada uma única vez. Se você quiser gestão de redes sociais, atualizações de site ou mentoria contínua, existem planos mensais. Mas você nunca é obrigado a continuar — cada etapa é independente.",
       },
     ],
   },
@@ -73,15 +73,15 @@ const faqCategories = [
     faqs: [
       {
         q: "O que é o Google Meu Negócio e por que preciso?",
-        a: "�? o perfil da sua empresa no Google �?? o que aparece no Maps e nos resultados de busca quando alguém pesquisa pelo seu tipo de negócio na sua cidade. Gratuito e essencial: empresas com perfil completo recebem 70% mais visitas do que empresas sem perfil.",
+        a: "�? o perfil da sua empresa no Google — o que aparece no Maps e nos resultados de busca quando alguém pesquisa pelo seu tipo de negócio na sua cidade. Gratuito e essencial: empresas com perfil completo recebem 70% mais visitas do que empresas sem perfil.",
       },
       {
         q: "Qualquer empresa pode ter Google Meu Negócio?",
-        a: "Sim. MEI, ME, empresa sem sede fixa, profissional autônomo �?? qualquer um pode criar um perfil. Para negócios que atendem no endereço do cliente (como jardinagem ou limpeza), é possível configurar como 'área de atendimento' sem mostrar endereço físico.",
+        a: "Sim. MEI, ME, empresa sem sede fixa, profissional autônomo — qualquer um pode criar um perfil. Para negócios que atendem no endereço do cliente (como jardinagem ou limpeza), é possível configurar como 'área de atendimento' sem mostrar endereço físico.",
       },
       {
         q: "Como responder avaliações negativas?",
-        a: "Sempre responda �?? nunca ignore. Agradeça o feedback, reconheça o problema (mesmo que discorde do tom), e mostre o que foi feito ou ofereça resolver. Uma resposta profissional a uma avaliação ruim diz mais sobre a empresa do que a própria avaliação. Clientes futuros veem isso.",
+        a: "Sempre responda — nunca ignore. Agradeça o feedback, reconheça o problema (mesmo que discorde do tom), e mostre o que foi feito ou ofereça resolver. Uma resposta profissional a uma avaliação ruim diz mais sobre a empresa do que a própria avaliação. Clientes futuros veem isso.",
       },
     ],
   },

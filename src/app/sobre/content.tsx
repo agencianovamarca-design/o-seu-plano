@@ -30,7 +30,7 @@ export function AboutPageContent() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/[0.06]">
               <Image
                 src="/images/avatar-strategy.jpg"
-                alt="Consultora O Seu Plano �?? Inteligência Estratégica"
+                alt="Consultora O Seu Plano — Inteligência Estratégica"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -52,7 +52,7 @@ export function AboutPageContent() {
               </h2>
               <p className="text-muted leading-relaxed">
                 Empoderar empreendedores, MEIs e profissionais liberais com
-                presença digital profissional �?? de forma clara, acessível e
+                presença digital profissional — de forma clara, acessível e
                 sem jargão técnico. Acreditamos que todo negócio honesto merece
                 ser encontrado e reconhecido no digital.
               </p>
@@ -67,7 +67,7 @@ export function AboutPageContent() {
               <p className="text-muted leading-relaxed">
                 Um Brasil onde qualquer pequeno negócio consegue parecer
                 profissional no digital. Onde o empreendedor não perde clientes
-                por falta de e-mail no domínio, perfil no Google ou site �?? e
+                por falta de e-mail no domínio, perfil no Google ou site — e
                 onde a estratégia digital é acessível, não elitizada.
               </p>
             </div>

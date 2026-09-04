@@ -106,7 +106,7 @@ export function HowItWorksSection() {
                 <span className="text-gradient-gold italic">no digital.</span>
               </h3>
               <p className="text-white/35 text-sm leading-relaxed mb-6">
-                Desde o e-mail profissional até o funil de vendas �?? montamos
+                Desde o e-mail profissional até o funil de vendas — montamos
                 tudo o que você precisa para parecer profissional e atrair
                 clientes reais, independente do seu nicho ou tamanho.
               </p>

@@ -8,13 +8,13 @@ const advantages = [
     icon: DollarSign,
     title: "Poder de compra multiplicado",
     description:
-      "Com o dólar acima de R$ 5, seu salário em moeda forte compra muito mais no Brasil. Um imóvel de R$ 300 mil custa menos de US$ 55 mil �?? impensável nos EUA ou Europa.",
+      "Com o dólar acima de R$ 5, seu salário em moeda forte compra muito mais no Brasil. Um imóvel de R$ 300 mil custa menos de US$ 55 mil — impensável nos EUA ou Europa.",
   },
   {
     icon: TrendingUp,
     title: "Renda passiva em reais",
     description:
-      "Adquira imóveis no Brasil via consórcio e coloque para alugar. A renda em reais cobre a parcela enquanto seu patrimônio cresce �?? tudo sem juros compostos.",
+      "Adquira imóveis no Brasil via consórcio e coloque para alugar. A renda em reais cobre a parcela enquanto seu patrimônio cresce — tudo sem juros compostos.",
   },
   {
     icon: Shield,
@@ -55,7 +55,7 @@ export function GlobalInvestorSection() {
             <p className="text-white/35 text-base leading-relaxed max-w-lg">
               Mais de 4 milhões de brasileiros vivem fora do país. Se você é um
               deles, o consórcio é a forma mais inteligente de construir
-              patrimônio no Brasil �?? sem juros, sem burocracia bancária
+              patrimônio no Brasil — sem juros, sem burocracia bancária
               internacional e com o câmbio a seu favor.
             </p>
           </AnimateIn>
@@ -72,7 +72,7 @@ export function GlobalInvestorSection() {
                     R$ 300 mil
                   </p>
                   <p className="text-electric text-sm font-medium mt-1">
-                    �?? US$ 55,000
+                    — US$ 55,000
                   </p>
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export function GlobalInvestorSection() {
                     R$ 1.927/mês
                   </p>
                   <p className="text-electric text-sm font-medium mt-1">
-                    �?? US$ 350/mês
+                    — US$ 350/mês
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export function GlobalInvestorSection() {
                     R$ 712 mil
                   </p>
                   <p className="text-white/20 text-[10px] mt-1">
-                    �?? US$ 130,000 economizados
+                    — US$ 130,000 economizados
                   </p>
                 </div>
               </div>

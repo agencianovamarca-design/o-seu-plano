@@ -14,7 +14,7 @@ export function ConsultantSection() {
           <div className="relative min-h-[500px] lg:min-h-[650px]">
             <Image
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
-              alt="Especialista em estratégia digital �?? O Seu Plano"
+              alt="Especialista em estratégia digital — O Seu Plano"
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -38,7 +38,7 @@ export function ConsultantSection() {
               <p className="text-white/40 text-base leading-relaxed mb-6">
                 Por trás de cada plano existe uma análise cuidadosa,
                 personalizada e comprometida com o resultado do seu negócio.
-                Não vendemos promessas �?? entregamos estratégia.
+                Não vendemos promessas — entregamos estratégia.
               </p>
               <p className="text-white/40 text-base leading-relaxed mb-10">
                 Analisamos sua presença digital atual, identificamos o que está

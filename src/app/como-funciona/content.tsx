@@ -17,7 +17,7 @@ const steps = [
     icon: Search,
     title: "1. Diagnóstico gratuito",
     description:
-      "Tudo começa com uma conversa honesta. Analisamos a sua situação digital atual �?? e-mail, redes sociais, site, Google �?? e identificamos exatamente o que está custando clientes para o seu negócio.",
+      "Tudo começa com uma conversa honesta. Analisamos a sua situação digital atual — e-mail, redes sociais, site, Google — e identificamos exatamente o que está custando clientes para o seu negócio.",
     details: [
       "Análise completa da presença digital atual",
       "Identificação dos pontos críticos",
@@ -29,7 +29,7 @@ const steps = [
     icon: Lightbulb,
     title: "2. Plano de ação personalizado",
     description:
-      "Com o diagnóstico em mãos, montamos um plano específico para o seu momento e o seu negócio. Sem solução genérica �?? o que vale para um escritório de advocacia não é o mesmo que vale para um salão de beleza.",
+      "Com o diagnóstico em mãos, montamos um plano específico para o seu momento e o seu negócio. Sem solução genérica — o que vale para um escritório de advocacia não é o mesmo que vale para um salão de beleza.",
     details: [
       "Plano feito para o seu nicho específico",
       "Priorização: o que resolver primeiro",
@@ -41,7 +41,7 @@ const steps = [
     icon: Zap,
     title: "3. Execução rápida",
     description:
-      "Não ficamos na teoria. Em até 7 dias úteis, você já tem e-mail no seu domínio, perfil do Google Meu Negócio configurado, redes sociais estruturadas e site no ar �?? ou o que o seu plano exige.",
+      "Não ficamos na teoria. Em até 7 dias úteis, você já tem e-mail no seu domínio, perfil do Google Meu Negócio configurado, redes sociais estruturadas e site no ar — ou o que o seu plano exige.",
     details: [
       "E-mail profissional em menos de 24h",
       "Google Meu Negócio ativo em até 3 dias",
@@ -53,7 +53,7 @@ const steps = [
     icon: CheckCircle,
     title: "4. Entrega e revisão",
     description:
-      "Entregamos tudo com acesso completo �?? você é dono de tudo que criamos. Passamos por cada entrega junto com você, explicamos como usar e garantimos que tudo está funcionando antes de encerrar.",
+      "Entregamos tudo com acesso completo — você é dono de tudo que criamos. Passamos por cada entrega junto com você, explicamos como usar e garantimos que tudo está funcionando antes de encerrar.",
     details: [
       "Acesso total a todos os canais criados",
       "Walkthrough de cada entrega",
@@ -65,7 +65,7 @@ const steps = [
     icon: Rocket,
     title: "5. Estratégia de conteúdo",
     description:
-      "Presença digital sem conteúdo é vitrine fechada. Entregamos um roteiro dos primeiros 30 dias �?? o que postar, quando e com qual objetivo �?? para que você comece a atrair clientes imediatamente.",
+      "Presença digital sem conteúdo é vitrine fechada. Entregamos um roteiro dos primeiros 30 dias — o que postar, quando e com qual objetivo — para que você comece a atrair clientes imediatamente.",
     details: [
       "30 dias de pauta de conteúdo prontos",
       "Roteiro de stories, posts e reels",
@@ -77,7 +77,7 @@ const steps = [
     icon: BarChart3,
     title: "6. Acompanhamento e evolução",
     description:
-      "Negócio que cresce precisa de presença digital que acompanhe. Oferecemos revisões periódicas e atualizações para que o que foi estruturado continue gerando resultado �?? não apenas no mês 1.",
+      "Negócio que cresce precisa de presença digital que acompanhe. Oferecemos revisões periódicas e atualizações para que o que foi estruturado continue gerando resultado — não apenas no mês 1.",
     details: [
       "Revisão trimestral da estratégia",
       "Atualização de conteúdo conforme o negócio evolui",
@@ -124,7 +124,7 @@ export function HowItWorksPageContent() {
             <span className="text-gradient-gold">na prática.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-muted text-lg leading-relaxed">
-            Do diagnóstico gratuito ao site no ar �?? um processo claro, rápido e sem
+            Do diagnóstico gratuito ao site no ar — um processo claro, rápido e sem
             jargão técnico. Feito para qualquer empresa, MEI ou profissional liberal.
           </p>
         </AnimateIn>
@@ -173,7 +173,7 @@ export function HowItWorksPageContent() {
             Mitos vs <span className="text-gradient-gold">Realidade</span>
           </h2>
           <p className="text-muted text-lg">
-            O que te impede de ter presença digital profissional �?? e a verdade por trás de cada desculpa.
+            O que te impede de ter presença digital profissional — e a verdade por trás de cada desculpa.
           </p>
         </AnimateIn>
 

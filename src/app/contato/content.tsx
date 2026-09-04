@@ -74,7 +74,7 @@ export function ContatoPageContent() {
                   <h3 className="font-heading font-semibold text-light mb-1">
                     WhatsApp
                   </h3>
-                  <p className="text-muted text-sm">+1 (716) 939-9340</p>
+                  <p className="text-muted text-sm">+55 (19) 9 9748-5834</p>
                   <p className="text-green-400 text-xs mt-1">
                     Resposta rápida
                   </p>

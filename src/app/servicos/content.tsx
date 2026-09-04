@@ -23,7 +23,7 @@ const services = [
     title: "E-mail Profissional",
     subtitle: "nome@seudominio.com.br",
     description:
-      "Pare de usar @gmail ou @hotmail para falar com clientes. Um e-mail no seu domínio transmite credibilidade imediata �?? e é a primeira coisa que clientes sérios avaliam antes de fechar negócio.",
+      "Pare de usar @gmail ou @hotmail para falar com clientes. Um e-mail no seu domínio transmite credibilidade imediata — e é a primeira coisa que clientes sérios avaliam antes de fechar negócio.",
     deliverables: [
       "Configuração completa em menos de 24h",
       "Acesso pelo celular, tablet e computador",
@@ -71,12 +71,12 @@ const services = [
     title: "Site Profissional",
     subtitle: "Do zero ao ar em até 7 dias",
     description:
-      "Um site bem feito é o seu vendedor 24 horas. Estruturamos sua presença online com domínio, hospedagem, conteúdo e tudo funcionando �?? sem enrolação técnica.",
+      "Um site bem feito é o seu vendedor 24 horas. Estruturamos sua presença online com domínio, hospedagem, conteúdo e tudo funcionando — sem enrolação técnica.",
     deliverables: [
       "Site funcional em até 7 dias úteis",
       "Domínio e hospedagem incluídos ou orientados",
       "Integração com WhatsApp e redes sociais",
-      "Acesso total �?? você é dono de tudo",
+      "Acesso total — você é dono de tudo",
     ],
     highlight: false,
     color: "electric",
@@ -87,7 +87,7 @@ const services = [
     title: "Kit Presença Digital Completo",
     subtitle: "E-mail + Google + Redes + Site",
     description:
-      "A solução completa para quem quer resolver tudo de uma vez. E-mail profissional, Google Meu Negócio, redes sociais estruturadas e site no ar �?? integrados e com estratégia de conteúdo inclusa.",
+      "A solução completa para quem quer resolver tudo de uma vez. E-mail profissional, Google Meu Negócio, redes sociais estruturadas e site no ar — integrados e com estratégia de conteúdo inclusa.",
     deliverables: [
       "E-mail profissional no domínio",
       "Google Meu Negócio verificado e otimizado",
@@ -103,7 +103,7 @@ const services = [
     title: "Conteúdo e Calendário Editorial",
     subtitle: "30 dias de pauta pronta",
     description:
-      "Presença digital sem conteúdo é vitrine fechada. Desenvolvemos a pauta dos primeiros 30 dias com o que postar, quando e com qual objetivo �?? para que você comece a atrair clientes imediatamente.",
+      "Presença digital sem conteúdo é vitrine fechada. Desenvolvemos a pauta dos primeiros 30 dias com o que postar, quando e com qual objetivo — para que você comece a atrair clientes imediatamente.",
     deliverables: [
       "30 dias de pauta de posts e stories",
       "Templates prontos para usar e adaptar",
@@ -119,7 +119,7 @@ const services = [
     title: "E-mail Marketing Profissional",
     subtitle: "Lista, automação e campanhas",
     description:
-      "Construa uma lista de clientes que é sua �?? não do Instagram ou do Google. Configuramos a ferramenta, os formulários de captura e as primeiras sequências para nutrir e vender por e-mail.",
+      "Construa uma lista de clientes que é sua — não do Instagram ou do Google. Configuramos a ferramenta, os formulários de captura e as primeiras sequências para nutrir e vender por e-mail.",
     deliverables: [
       "Configuração de ferramenta de e-mail marketing",
       "Formulário de captura integrado ao seu site",
@@ -133,7 +133,7 @@ const services = [
     icon: Star,
     tag: "Premium",
     title: "Mentoria Estratégica Individual",
-    subtitle: "Sessão 1h �?? plano personalizado",
+    subtitle: "Sessão 1h — plano personalizado",
     description:
       "Para quem quer clareza total antes de executar. Analisamos sua presença digital atual, identificamos os pontos críticos e montamos um plano de ação feito para o seu negócio específico.",
     deliverables: [
@@ -156,7 +156,7 @@ const differentials = [
   {
     icon: Shield,
     title: "Você é dono de tudo",
-    text: "100% de acesso a tudo que criamos. Sem dependência, sem reféns. O negócio é seu �?? a presença digital também.",
+    text: "100% de acesso a tudo que criamos. Sem dependência, sem reféns. O negócio é seu — a presença digital também.",
   },
   {
     icon: CheckCircle,
@@ -186,7 +186,7 @@ export function ServicosPageContent() {
             para negócios.
           </h1>
           <p className="text-white/40 text-lg max-w-2xl leading-relaxed">
-            Do e-mail ao site, do Google ao Instagram �?? estruturamos tudo que faz
+            Do e-mail ao site, do Google ao Instagram — estruturamos tudo que faz
             um negócio parecer profissional no digital. Rápido, sem jargão técnico
             e com acesso total nas suas mãos.
           </p>
@@ -357,7 +357,7 @@ export function ServicosPageContent() {
             </h2>
             <p className="text-white/40 mb-8 max-w-lg mx-auto leading-relaxed">
               Em 15 minutos pelo WhatsApp, identificamos exatamente o que está
-              impedindo seu negócio de parecer profissional no digital �?? e qual
+              impedindo seu negócio de parecer profissional no digital — e qual
               serviço faz sentido para o seu momento.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
